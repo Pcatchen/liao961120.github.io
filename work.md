@@ -61,7 +61,7 @@ A blog post about setting up an automatic feedback system based on the response 
 {:.indent}
 
 
-Mar 18, 2018 &nbsp;&nbsp; [R Markdown Features](/notes/rmd_features.html)  
+Mar 18, 2018 &nbsp;&nbsp; [R Markdown Features](https://liao961120.github.io/notes/rmd_features.html)  
 
 A compact reference to [R Markdown](https://rmarkdown.rstudio.com/). Contains useful formatting tips for both PDF and HTML outputs.
 {:.indent}
