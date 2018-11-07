@@ -71,6 +71,19 @@ $(document).ready(function() {
 </script>
 
 
+<!-- Add target_blank to external link -->
+<script>
+$(document).ready(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<!-- Add highlight.js -->
 {% if page.highlight == true %}
 <link rel="stylesheet" href="/assets/highlightJS/styles/tomorrow-night-bright.css">
 <script src="/assets/highlightJS/highlight.pack.js"></script>

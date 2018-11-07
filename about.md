@@ -48,9 +48,6 @@ You can contact me via Email or Facebook, the info is in the footer region of th
 
 The theme of my blog is forked from [kitian616/jekyll TeXt theme](https://github.com/kitian616/jekyll-TeXt-theme), and some customization has been done to fit my own tastes. **TeXt theme** is by far the prettiest theme I've ever seen, the typeface and clean layout make it comfortable when reading the blog.
 
-#### **Icon**
-
-The favicon on the browser's tab and the icon beside the site's title are [Tux](https://en.wikipedia.org/wiki/Tux), the official brand character of the Linux kernel. **Tux** is used here because of its cuteness. The version of this Tux is [Tux Crystal 2nd revision](https://en.wikipedia.org/wiki/Tux#/media/File:TUX_G2.svg){:target="_blank"}.
 
 
 <br>
