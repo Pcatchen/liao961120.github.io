@@ -3,6 +3,18 @@ title: About
 comment: false
 ---
 
+<style>
+    tab0 { padding-left: 1.1em; }
+    tab1 { padding-left: 4em; }
+    tab2 { padding-left: 8em; }
+    ul {list-style-image: none;}
+    h2 {
+        padding-top: 1em;
+    }
+    }
+</style>
+
+
 ## Interests and Motivation
 
 I'm a psychology major strongly interested in human evolution, particularly the interactions of culture and genetic evolution, which I believe have led to some of the most distinctive features of human psychologies. This interest has driven me to study a range of interesting subjects in addition to psychology, such as **Prehistory & Archaeology**, **Cultural Anthropology**, **Linguistics**, **Genetics**, **Ecology** and **Evolution**. This interest has also given me an insight about the importance of transmitting idea, knowledge, and experience to others in human societies. 
@@ -41,3 +53,4 @@ The theme of my blog is forked from [kitian616/jekyll TeXt theme](https://github
 The favicon on the browser's tab and the icon beside the site's title are [Tux](https://en.wikipedia.org/wiki/Tux), the official brand character of the Linux kernel. **Tux** is used here because of its cuteness. The version of this Tux is [Tux Crystal 2nd revision](https://en.wikipedia.org/wiki/Tux#/media/File:TUX_G2.svg){:target="_blank"}.
 
 
+<br>

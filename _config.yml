@@ -35,7 +35,7 @@ timezone: Asia/Taipei # see https://en.wikipedia.org/wiki/List_of_tz_database_ti
 ##############################
 author:
   type      : person # "person" (default), "organization"
-  name      : Yongfu
+  name      : Yongfu Liao
   url       : https://liao961120.github.io
   avatar    : https://raw.githubusercontent.com/liao961120/local_depend/master/icons/me-trans.png # path or url of avatar image
   bio       : I am a college student from Taipei, Taiwan.
