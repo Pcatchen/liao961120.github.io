@@ -113,19 +113,17 @@ sharing:
 ##############################
 comments:
   provider: disqus # false (default), "disqus", "gitalk", "custom"
-
-
   disqus:
-    shortname: "y-f-liao-s-page" # the Disqus shortname for the site
+    shortname: y-f-liao-s-page # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
-  gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+#  gitalk:
+#    clientID    : # GitHub Application Client ID
+#    clientSecret: # GitHub Application Client Secret
+#    repository  : # GitHub repo
+#    owner       : # GitHub repo owner
+#    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       # - your GitHub Id
 
 
@@ -197,6 +195,7 @@ defaults:
         toc: true
       show_edit_on_github: true
       pageview: true
+      comments: true
 
 
 ## => Plugins
