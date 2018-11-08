@@ -106,7 +106,7 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: false # false (default), "addtoany"
+  provider: addthis # false (default), "addtoany"
 
 
 ## => Comments
@@ -195,7 +195,6 @@ defaults:
         toc: true
       show_edit_on_github: true
       pageview: true
-      comments: true
 
 
 ## => Plugins
