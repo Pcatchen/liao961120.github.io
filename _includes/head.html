@@ -46,11 +46,9 @@
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
 
 
+<script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
 
-<!-- Add Id to h1, h2, h3 to allow TOC -->
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-
-<script>
+// Add Id to h1, h2, h3 to allow TOC
 $(document).ready(function() {
     $("h1").each(function() {
         var hyphenated = $(this).text().replace(/\s/g,'-');
@@ -68,11 +66,8 @@ $(document).ready(function() {
     }
     );
 })();
-</script>
 
-
-<!-- Add target_blank to external link -->
-<script>
+// Add target_blank to external link
 $(document).ready(function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
@@ -82,6 +77,8 @@ $(document).ready(function() {
   }
 })();
 </script>
+
+
 
 <!-- Add highlight.js -->
 {% if page.highlight == true %}
