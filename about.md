@@ -8,11 +8,11 @@ comment: false
     tab1 { padding-left: 4em; }
     tab2 { padding-left: 8em; }
     ul {list-style-image: none;}
-    h2 {
-        padding-top: 1em;
-    }
-    }
+    h2 { padding-top: 1em; }
 </style>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<img src="/assets/images/me-trans-sbg.png" class="ori float-right rounded" style="width:20%"/>
 
 
 ## Interests and Motivation
