@@ -49,26 +49,8 @@
 <script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 
 <script>
-// Add Id to h1, h2, h3 to allow TOC
-$(document).ready(function() {
-    $("h1").each(function() {
-        var hyphenated = $(this).text().replace(/\s/g,'-');
-        $(this).attr('id',hyphenated);
-    }
-    );
-    $("h2").each(function() {
-        var hyphenated = $(this).text().replace(/\s/g,'-');
-        $(this).attr('id',hyphenated);
-    }
-    );
-    $("h3").each(function() {
-        var hyphenated = $(this).text().replace(/\s/g,'-');
-        $(this).attr('id',hyphenated);
-    }
-    );
-})();
-
 // Add target_blank to external link
+// See article-header.html for auto adding ID to h1,h2,h3
 $(document).ready(function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
