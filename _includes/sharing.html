@@ -1,7 +1,5 @@
 {%- if site.sharing.provider == 'addtoany' -%}
   {%- include sharing-providers/addtoany.html -%}
-{%- endif -%}
-
-{%- if site.sharing.provider == 'addthis' -%}
+{%- elsif site.sharing.provider == 'addthis' -%}
   {%- include sharing-providers/addthis.html -%}
 {%- endif -%}
