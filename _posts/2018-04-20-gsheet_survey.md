@@ -336,9 +336,7 @@ R markdown 是 Markdown 的擴充，其輸出的 HTML 格式已經過簡單的�
 
 <div style="font-size:10pt; text-align:right">Last updated: Apr 27, 2018</div>
 
-附註
----------------------------------
-
+<!-- Footnotes -->
 [^test]: 其實 google 表單確實能即時回饋分數，但僅限[測驗模式](https://support.google.com/docs/answer/7032287?hl=zh-Hant)，有諸多限制，例如，題目僅能為「對」或「錯」，無法處理反向計分的問題，無法使用線性刻度 (linear scale) 計分等。
 
 [^num]: 若擔心填答人數超過 9998 人，可設個更大的數字，如`E99999`。

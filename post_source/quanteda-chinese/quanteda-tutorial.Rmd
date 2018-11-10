@@ -9,7 +9,6 @@ output:
 
 <!--yaml
 ---
-layout: post
 mermaid: true
 mathjax2: false
 mathjax: false
