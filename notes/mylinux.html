@@ -387,6 +387,12 @@ title: Slides
 &lt;br&gt;&lt;br&gt;
 _EOF_</code></pre>
 </div>
+<div id="compare-files" class="section level2">
+<h2><span class="header-section-number">4.4</span> Compare Files</h2>
+<pre class="bash"><code>ls dir1 &gt; file1.txt
+ls dir2 &gt; file2.txt
+diff file1.txt file2.txt</code></pre>
+</div>
 </div>
 <div id="navigation" class="section level1">
 <h1><span class="header-section-number">5</span> Navigation</h1>
@@ -433,16 +439,16 @@ $(ls -l)&quot;</code></pre>
 <pre><code>&gt; Before:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 11 21:45 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 11 21:48 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt
 &gt; 
 &gt; After:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 11 21:45 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 11 21:48 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
-&gt; lrwxrwxrwx 1 liao liao   33 Nov 11 21:45 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
+&gt; lrwxrwxrwx 1 liao liao   33 Nov 11 21:48 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt</code></pre>
 </div>
 </div>
