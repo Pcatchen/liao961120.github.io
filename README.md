@@ -24,3 +24,5 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 - Theme Color ([_chocolate.scss](https://github.com/liao961120/liao961120.github.io/blob/master/_sass/skins/_chocolate.scss))
 
 - Default Rounded and Shadow Img ([_chocolate.scss](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_sass/skins/_chocolate.scss#L75))
+
+- Right Align blockquote author (last line) ([article-header.html](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_includes/article-header.html#L73))
