@@ -17,7 +17,7 @@ comment: false
     }
 </style>
 
-<img src="/assets/images/me-about.png" class="ori" style="width:20%;float: right;"/>
+<img src="/assets/images/me-about.png" style="width:20%;float: right;"/>
 
 
 ## Interests and Motivation
