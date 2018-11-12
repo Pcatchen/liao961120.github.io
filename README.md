@@ -26,3 +26,5 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 - Default Rounded and Shadow Img ([_chocolate.scss](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_sass/skins/_chocolate.scss#L75))
 
 - Right Align blockquote author (last line) ([article-header.html](https://github.com/liao961120/liao961120.github.io/blob/e44d687152c6e3172decef3f6e34a0084a8e374d/_includes/article-header.html#L73))
+
+- Tweak font-size for Large screen device ([commit](https://github.com/liao961120/liao961120.github.io/commit/ce0fdb020dac1aef606bba1d261358169771a34b))
