@@ -28,3 +28,5 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 - Right Align blockquote author (last line) ([article-header.html](https://github.com/liao961120/liao961120.github.io/blob/e44d687152c6e3172decef3f6e34a0084a8e374d/_includes/article-header.html#L73))
 
 - Tweak font-size for Large screen device ([commit](https://github.com/liao961120/liao961120.github.io/commit/ce0fdb020dac1aef606bba1d261358169771a34b))
+
+- Restrict default image shadow & rounded corner to article content ([commit1](https://github.com/liao961120/liao961120.github.io/commit/76d4008357433a658d32fedafa6f87b35c233afa), [commit2](https://github.com/liao961120/liao961120.github.io/commit/eb196d3d8a3f424770c27430119791ba917fca9d))
