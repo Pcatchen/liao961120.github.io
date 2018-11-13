@@ -28,7 +28,49 @@ yaml-->
 </div>
 <div id="source-code" class="section level2">
 <h2>Source Code</h2>
-<script src="https://gist.github.com/liao961120/bdae1d0c1c7d90da8ae201899c69b40b.js"></script>
+<pre class="r"><code>sort_def_list &lt;- function(in_file, out_file = NULL) {
+  library(stringr)
+  library(dplyr)
+  
+  data &lt;- readLines(in_file)
+  
+  # Extract, remove yaml header
+  yaml &lt;- which(data == &quot;---&quot;)
+  head &lt;- c(data[yaml[1]:yaml[2]], &quot;\n&quot;)
+  data &lt;- data[(yaml[2]+1):length(data)]
+  
+  # Indexing lines
+  def_start &lt;- which(stringr::str_detect(data,  &quot;^: &quot;)) - 1
+  def_end &lt;- c(def_start[2:length(def_start)] - 1, length(data))
+  
+  def_ranges &lt;- dplyr::data_frame(term = data[def_start],
+                                  start = def_start,
+                                  end = def_end) %&gt;%
+    dplyr::arrange(term) %&gt;%
+    dplyr::mutate(new_start = 
+                    cumsum(
+                      c(1, (end-start+1)[-length(term)])
+                      )
+                  ) %&gt;%
+    dplyr::mutate(new_end = new_start + (end-start))
+  
+  
+  # Create ordered definition list
+  data2 &lt;- rep(NA, length(data))
+  for (i in seq_along(def_ranges$term)) {
+    start &lt;- def_ranges$start[i]
+    end &lt;- def_ranges$end[i]
+    n_start &lt;- def_ranges$new_start[i]
+    n_end &lt;- def_ranges$new_end[i]
+    data2[n_start:n_end] &lt;- data[start:end]
+  }
+  
+  # Rewrite rmd
+  if (is.null(out_file)) out_file &lt;- in_file
+  data2 &lt;- c(head, data2[!is.na(data2)])
+  writeLines(paste(data2, collapse = &quot;\n&quot;),
+             out_file)
+}</code></pre>
 </div>
 <div class="footnotes">
 <hr />
