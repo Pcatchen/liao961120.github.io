@@ -285,25 +285,36 @@ score("Enter_your_Token")
 以下提供一個最精簡的例子，由註冊 GitHub 帳號到架設網頁，過程中僅需使用到瀏覽器(GUI)，不需用到 Git。
 
 #### 註冊與建立 Repo
-1. 至 https://github.com/ ，填寫註冊資訊(一個 email 僅能註冊一次)，並記得去信箱認證。**Username** 即為之後網站的網址，以下圖為例，minimalghpage.github.io。  ![](/assets/gsheet_post/github_signup.PNG){: width="48%" height="48%"}
+1. 至 https://github.com/ ，填寫註冊資訊(一個 email 僅能註冊一次)，並記得去信箱認證。**Username** 即為之後網站的網址，以下圖為例，minimalghpage.github.io。
 
-2. 信箱認證後，將自動跳回 GitHub 頁面。之後，基本上不需更動出現之畫面的設定，只要按下一步。最後應會出現下圖，按右上角圖示並選取 **Your Profile**。  ![](/assets/gsheet_post/gh_main.PNG){: width="80%" height="80%"}
+	![](/assets/gsheet_post/github_signup.PNG){: width="48%" height="48%"}
 
-3. 按下網頁中上方的 **Repositories** 後應會出現下圖，接著再按下右上方的綠色按鈕 **New**。 <br>![](/assets/gsheet_post/gh_repo.PNG){: width="80%" height="80%"}
+1. 信箱認證後，將自動跳回 GitHub 頁面。之後，基本上不需更動出現之畫面的設定，只要按下一步。最後應會出現下圖，按右上角圖示並選取 **Your Profile**。
+	
+	![account info](/assets/gsheet_post/gh_main.PNG){: width="80%" height="80%"}
 
-4. 出現下圖後，在 **Repository name** 輸入`<username>.github.io`(`<username>`一定要與當初註冊時填入的 **Username** 一模一樣)，並**勾選**下方 **Initialize this repository with a README**。最後按 **Create repository**。<br>![](/assets/gsheet_post/create_repo.PNG){: width="70%" height="70%"}
+1. 按下網頁中上方的 **Repositories** 後應會出現下圖，接著再按下右上方的綠色按鈕 **New**。
+	
+	![](/assets/gsheet_post/gh_repo.PNG){: width="80%" height="80%"}
+
+1. 出現下圖後，在 **Repository name** 輸入`<username>.github.io`(`<username>`一定要與當初註冊時填入的 **Username** 一模一樣)，並**勾選**下方 **Initialize this repository with a README**。最後按 **Create repository**。
+
+	![](/assets/gsheet_post/create_repo.PNG){: width="70%" height="70%"}
+
 
 #### 上傳網頁
 
 1. [下載](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/liao961120/local_depend/tree/master/minimal_web_DataCampLight) **Minimal Web Page** (下載後需解壓縮。)
 
 2. 至剛剛建立的 Repository (`<username>.github.io`)，點擊 **Upload files** (圖中黃色螢光處)。  
-![](/assets/gsheet_post/gh_upload.PNG){: width="90%" height="90%"}
+
+	![](/assets/gsheet_post/gh_upload.PNG){: width="90%" height="90%"}
 
 3. 進入新畫面後，將`index.html`, `search.html`, `.nojekyll`拖曳上傳，並按下畫面最下方 **Commit changes**.
 
 4. 上傳完成後，即可看到下圖。`.nojekyll`不會顯示出來。  
-![](/assets/gsheet_post/gh_uploaded.PNG){: width="90%" height="90%"}
+	
+	![](/assets/gsheet_post/gh_uploaded.PNG){: width="90%" height="90%"}
 
 5. **完成！**過 1, 2 分鐘後，即可至`<username>.github.io`檢視網頁。
 6. 之後若要修改檔案，將修改過後的檔案依相同步驟上傳即可。
