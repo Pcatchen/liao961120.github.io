@@ -49,7 +49,13 @@ A web page for visualizing a [survey](https://docs.google.com/forms/d/e/1FAIpQLS
 
 ### Tutorials
 
-Apr 29, 2018 &nbsp;&nbsp; [R Notes for Multivariate Analysis](./MVA)  
+Nov 21, 2018 &nbsp;&nbsp; [My Bash Notes](https://liao961120.github.io/notes/mylinux.html)
+
+Quick reference on commonly used bash syntax.
+{:.indent}
+
+
+Apr 29, 2018 &nbsp;&nbsp; [R Notes for Multivariate Analysis](https://liao961120.github.io/MVA)  
 
 Working on the book currently.
 {:.indent}
