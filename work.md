@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 title: Work
 comment: false
 ---
@@ -13,8 +13,8 @@ comment: false
     p.indent{
       font-size: 0.9em;
     	padding-left: 1.1em;
-    	padding-bottom: 1.5em;
-      margin-top: -0.3em;
+    	padding-bottom: 1em;
+      margin-top: -0.7em;
     }
 </style>
 

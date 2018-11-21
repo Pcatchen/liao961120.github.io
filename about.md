@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 title: About
 comment: false
 ---
@@ -17,10 +17,8 @@ comment: false
     }
 </style>
 
-<img src="/assets/images/me-about.png" style="width:20%;float: right;"/>
 
-
-## Interests and Motivation
+## Interests and Motivation <img src="/assets/images/me-about.png" style="width:20%;float: right;" class="ori"/>
 
 I'm a psychology major strongly interested in human evolution, particularly the interactions of culture and genetic evolution, which I believe have led to some of the most distinctive features of human psychologies. This interest has driven me to study a range of interesting subjects in addition to psychology, such as **Prehistory & Archaeology**, **Cultural Anthropology**, **Linguistics**, **Genetics**, **Ecology** and **Evolution**. This interest has also given me an insight about the importance of transmitting idea, knowledge, and experience to others in human societies. 
 
