@@ -1,6 +1,6 @@
 ---
 title: Ecological Modeling
-layout: page
+layout: article
 ---
 
 <style>
