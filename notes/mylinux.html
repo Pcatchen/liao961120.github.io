@@ -11,7 +11,7 @@
 
 <meta name="author" content="Yongfu Liao" />
 
-<meta name="date" content="2018-11-21" />
+<meta name="date" content="2018-11-22" />
 
 <title>My Bash Notes</title>
 
@@ -230,17 +230,15 @@ div.tocify {
 <h1 class="title toc-ignore">My Bash Notes</h1>
 <h3 class="subtitle"><em>A Quick Reference</em></h3>
 <h4 class="author"><em><a href="https://liao961120.github.io/">Yongfu Liao</a></em></h4>
-<h4 class="date"><em>November 21, 2018</em></h4>
+<h4 class="date"><em>November 22, 2018</em></h4>
 
 </div>
 
 
 <div id="common-syntax" class="section level1">
 <h1><span class="header-section-number">1</span> Common Syntax</h1>
-<div id="branching" class="section level2">
-<h2><span class="header-section-number">1.1</span> Branching</h2>
-<div id="case" class="section level3">
-<h3><span class="header-section-number">1.1.1</span> case</h3>
+<div id="case" class="section level2">
+<h2><span class="header-section-number">1.1</span> case</h2>
 <pre class="bash"><code>case &quot;$var&quot; in
     pattern_1)
         commands
@@ -250,8 +248,8 @@ div.tocify {
         ;;
 esac</code></pre>
 </div>
-<div id="if" class="section level3">
-<h3><span class="header-section-number">1.1.2</span> if</h3>
+<div id="if" class="section level2">
+<h2><span class="header-section-number">1.2</span> if</h2>
 <pre class="bash"><code>if [[ ]]; then
     commands
 elif [[ ]]; then
@@ -259,32 +257,30 @@ elif [[ ]]; then
 else
     commands
 fi</code></pre>
-<div id="pipe" class="section level4">
-<h4><span class="header-section-number">1.1.2.1</span> pipe</h4>
-<pre class="bash"><code>[ -f &lt;file-name&gt; ] &amp;&amp; &lt;command&gt; # file exist
-[ -d &lt;dir-name&gt; ] || &lt;command&gt;  # dir exist
-[ -z &quot;$var&quot; ]           # Whether empty string</code></pre>
-</div>
-</div>
-<div id="logical-comparisons" class="section level3">
-<h3><span class="header-section-number">1.1.3</span> Logical Comparisons</h3>
+<div id="logical-operators" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Logical Operators</h3>
 <pre class="bash"><code>-eq # equal
 -ne # not equal
 -lt # less than
 -le # less than or equal
 -gt # greater than
 -ge # greater than or equal</code></pre>
-<pre class="bash"><code>if [[ $num1 -eq $num2 ]]; then 
-  echo &quot;true&quot;
-fi</code></pre>
+<pre class="bash"><code>[[ $num1 -eq $num2 ]] &amp;&amp; echo &quot;true&quot;</code></pre>
 </div>
+</div>
+<div id="conditional-square-brackets" class="section level2">
+<h2><span class="header-section-number">1.3</span> Conditional (Square brackets)</h2>
+<pre class="bash"><code>[ -f file.txt ] &amp;&amp; echo &quot;File exist&quot; 
+[ -s file.txt ] || echo &quot;File is empty&quot;
+[ -d dir/ ] &amp;&amp; echo &quot;Dir exist&quot;
+[ -z &quot;$var&quot; ]      # Whether $var is empty</code></pre>
 </div>
 <div id="loops" class="section level2">
-<h2><span class="header-section-number">1.2</span> Loops</h2>
+<h2><span class="header-section-number">1.4</span> Loops</h2>
 <div id="for" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> for</h3>
+<h3><span class="header-section-number">1.4.1</span> for</h3>
 <div id="with-sequence-of-numbers" class="section level4">
-<h4><span class="header-section-number">1.2.1.1</span> With Sequence of Numbers</h4>
+<h4><span class="header-section-number">1.4.1.1</span> With Sequence of Numbers</h4>
 <p><strong>Tradional Type</strong></p>
 <pre class="bash"><code>for i in {1..3}; do
     commands
@@ -295,7 +291,7 @@ done</code></pre>
 done</code></pre>
 </div>
 <div id="other-sequences" class="section level4">
-<h4><span class="header-section-number">1.2.1.2</span> Other Sequences</h4>
+<h4><span class="header-section-number">1.4.1.2</span> Other Sequences</h4>
 <pre class="bash"><code>for i in A B C D; do
     commands
 done</code></pre>
@@ -446,23 +442,56 @@ $(ls -l)&quot;</code></pre>
 <pre><code>&gt; Before:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 21 16:41 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 22 22:03 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt
 &gt; 
 &gt; After:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 21 16:41 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 22 22:03 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
-&gt; lrwxrwxrwx 1 liao liao   33 Nov 21 16:41 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
+&gt; lrwxrwxrwx 1 liao liao   33 Nov 22 22:03 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt</code></pre>
 </div>
 </div>
+<div id="reading-files" class="section level1">
+<h1><span class="header-section-number">6</span> Reading Files</h1>
+<div id="loop-over-every-line-of-a-file" class="section level2">
+<h2><span class="header-section-number">6.1</span> Loop Over Every Line of a File</h2>
+<pre class="bash"><code>while read p; do
+  date=$(echo &quot;$p&quot; | cut -d ',' -f 1)
+  file=$(echo &quot;$p&quot; | cut -d ',' -f 2)
+done &lt; list.txt</code></pre>
+</div>
+<div id="loop-over-several-files" class="section level2">
+<h2><span class="header-section-number">6.2</span> Loop Over Several Files</h2>
+<pre class="bash"><code>while IFS=$'\t' read -r title tags link
+do
+  printf &quot;${title}/n&quot;
+  printf &quot;${tags}/n&quot;
+  printf &quot;${link}/n/n&quot;
+done &lt; &lt;(paste FB_title.txt FB_tags.txt FB_link.txt)</code></pre>
+</div>
+</div>
+<div id="function-flows" class="section level1">
+<h1><span class="header-section-number">7</span> Function Flows</h1>
+<pre class="bash"><code>[ -f file.txt ] &amp;&amp; exit 0</code></pre>
+<pre class="bash"><code>sleep 10 # seconds</code></pre>
+</div>
 <div id="network" class="section level1">
-<h1><span class="header-section-number">6</span> Network</h1>
+<h1><span class="header-section-number">8</span> Network</h1>
+<div id="curl" class="section level2">
+<h2><span class="header-section-number">8.1</span> Curl</h2>
+<pre class="bash"><code>curl --silent --show-error --fail https://raw.githubusercontent.com/Rbloggers/web/posts/FB_title.txt &gt; FB_title.txt</code></pre>
+<ul>
+<li><code>--silent</code>: Don’t print process to std. output</li>
+<li><code>--show-error</code>: Print error message to std. output</li>
+<li><code>--fail</code>: Return empty file if 404</li>
+</ul>
+</div>
 <div id="setup-ssh" class="section level2">
-<h2><span class="header-section-number">6.1</span> Setup SSH</h2>
+<h2><span class="header-section-number">8.2</span> Setup SSH</h2>
 <div id="server-setup" class="section level3 unnumbered">
 <h3>Server Setup</h3>
 <p>Install SSH Server (so be connected by a remote client):</p>
@@ -486,9 +515,9 @@ $(ls -l)&quot;</code></pre>
 </div>
 </div>
 <div id="remote-control-via-ssh" class="section level1">
-<h1><span class="header-section-number">7</span> Remote Control Via SSH</h1>
+<h1><span class="header-section-number">9</span> Remote Control Via SSH</h1>
 <div id="hardware-configuration" class="section level2">
-<h2><span class="header-section-number">7.1</span> Hardware Configuration</h2>
+<h2><span class="header-section-number">9.1</span> Hardware Configuration</h2>
 <p>Enable WakeOnLane(WOL) at BIOS:</p>
 <ol style="list-style-type: decimal">
 <li><code>Power Management Setup</code> &gt; <code>WOL: enabled</code><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
@@ -496,23 +525,23 @@ $(ls -l)&quot;</code></pre>
 </ol>
 </div>
 <div id="wakeonlan" class="section level2">
-<h2><span class="header-section-number">7.2</span> wakeonlan</h2>
+<h2><span class="header-section-number">9.2</span> wakeonlan</h2>
 <p>wakeonlan -i <broadcast-ip> <MAC></p>
 <pre class="bash"><code>wakeonlan -i 192.168.2.255 44:87:fc:a1:0b:cc
 wakeonlan -i $rm_ip_b $rm_MAC</code></pre>
 </div>
 <div id="ssh-login" class="section level2">
-<h2><span class="header-section-number">7.3</span> SSH login</h2>
+<h2><span class="header-section-number">9.3</span> SSH login</h2>
 <p>ssh liao961120@<ip></p>
 <pre class="bash"><code>ssh liao961120@192.168.2.110
 ssh $ssh_pc</code></pre>
 </div>
 <div id="ssh-logout-suspend-computer" class="section level2">
-<h2><span class="header-section-number">7.4</span> SSH logout &amp; suspend computer</h2>
+<h2><span class="header-section-number">9.4</span> SSH logout &amp; suspend computer</h2>
 <p>Use <code>sudo shutdown 0</code> to leave. Remember to enable <code>Power of Mode</code> in BIOS, so you can WOL to open the computer again.</p>
 </div>
 <div id="variable-definition-in-.bashrc" class="section level2">
-<h2><span class="header-section-number">7.5</span> Variable Definition (in <code>~/.bashrc</code>)</h2>
+<h2><span class="header-section-number">9.5</span> Variable Definition (in <code>~/.bashrc</code>)</h2>
 <pre class="bash"><code>rm_MAC=&quot;44:87:fc:a1:0b:cc&quot;
 rm_ip=&quot;192.168.2.110&quot;
 rm_ip_b=`bash ~/ip2ipb.sh $rm_ip`
