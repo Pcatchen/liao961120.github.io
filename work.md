@@ -38,7 +38,7 @@ An R package that facilitates authoring linguistics-related documents in R Markd
 {:.indent}
 
 
-#### Linguistics Resources
+#### Linguistic Resources
 
 Sep 07, 2018 &nbsp;&nbsp; [PTT Slang](https://liao961120.github.io/PTT-scrapy/)
 
