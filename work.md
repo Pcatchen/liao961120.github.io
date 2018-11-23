@@ -68,7 +68,7 @@ Quick reference on commonly used bash syntax.
 
 Apr 29, 2018 &nbsp;&nbsp; [R Notes for Multivariate Analysis](https://liao961120.github.io/MVA)  
 
-Working on the book currently.
+A half-done book, probably forever. Finished chapters include *Multivariate normal distribution*, *Principle component analysis*, and *factor analysis*.
 {:.indent}
 
 
