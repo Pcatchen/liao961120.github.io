@@ -20,7 +20,7 @@ comment: false
 
 ## Personal Work
 
-### Authoring Tools
+#### Authoring Tools
 
 Oct 13, 2018 &nbsp;&nbsp; [ntuthesis](https://liao961120.github.io/ntuthesis)
 
@@ -29,7 +29,7 @@ A [bookdown](https://bookdown.org/yihui/bookdown/) Master and PhD thesis templat
 
 Oct 10, 2018 &nbsp;&nbsp; [Xaringan Chocolate Theme](https://liao961120.github.io/slides/xaringan/)
 
-A CSS theme created for the slide making R package [xaringan](https://github.com/yihui/xaringan) (making [remark.js](https://github.com/gnab/remark) slide in R Markdown).
+A CSS theme created for the slide making R package [xaringan](https://github.com/yihui/xaringan) ([remark.js](https://github.com/gnab/remark) slide in R Markdown).
 {:.indent}
 
 Sep 09, 2018 &nbsp;&nbsp; [linguisticsdown](https://liao961120.github.io/linguisticsdown)
@@ -38,7 +38,7 @@ An R package that facilitates authoring linguistics-related documents in R Markd
 {:.indent}
 
 
-### Linguistics Resources
+#### Linguistics Resources
 
 Sep 07, 2018 &nbsp;&nbsp; [PTT Slang](https://liao961120.github.io/PTT-scrapy/)
 
@@ -52,7 +52,7 @@ A web page for visualizing a [survey](https://docs.google.com/forms/d/e/1FAIpQLS
 {:.indent}
 
 
-### Learning Resources / Tutorials
+#### Learning Resources / Tutorials
 
 Apr 20, 2018 &nbsp;&nbsp; [Google Form: Auto Scoring and Feedback](https://liao961120.github.io/2018/04/20/gsheet_survey.html)  
 
