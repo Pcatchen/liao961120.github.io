@@ -11,7 +11,7 @@
 
 <meta name="author" content="Yongfu Liao" />
 
-<meta name="date" content="2018-11-22" />
+<meta name="date" content="2018-11-23" />
 
 <title>My Bash Notes</title>
 
@@ -230,7 +230,7 @@ div.tocify {
 <h1 class="title toc-ignore">My Bash Notes</h1>
 <h3 class="subtitle"><em>A Quick Reference</em></h3>
 <h4 class="author"><em><a href="https://liao961120.github.io/">Yongfu Liao</a></em></h4>
-<h4 class="date"><em>November 22, 2018</em></h4>
+<h4 class="date"><em>November 23, 2018</em></h4>
 
 </div>
 
@@ -271,7 +271,7 @@ fi</code></pre>
 <div id="conditionals-square-brackets" class="section level2">
 <h2><span class="header-section-number">1.3</span> Conditionals (Square brackets)</h2>
 <pre class="bash"><code>[ -f file.txt ] &amp;&amp; echo &quot;File exist&quot; 
-[ -s file.txt ] || echo &quot;File is empty&quot;
+[ -s FB_title.txt ] &amp;&amp; echo &quot;File size &gt; 0&quot;
 [ -d dir/ ] &amp;&amp; echo &quot;Dir exist&quot;
 [ -z &quot;$var&quot; ]      # Whether $var is empty</code></pre>
 </div>
@@ -442,16 +442,16 @@ $(ls -l)&quot;</code></pre>
 <pre><code>&gt; Before:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 22 22:59 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 23 22:01 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt
 &gt; 
 &gt; After:
 &gt; total 16
 &gt; -rw-r--r-- 1 liao liao    6 Jul 22 18:19 cmd_hist
-&gt; drwxr-xr-x 3 liao liao 4096 Nov 22 22:59 dir
+&gt; drwxr-xr-x 3 liao liao 4096 Nov 23 22:01 dir
 &gt; -rw-r--r-- 1 liao liao 1080 Jul 22 18:19 doc.Rmd
-&gt; lrwxrwxrwx 1 liao liao   33 Nov 22 22:59 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
+&gt; lrwxrwxrwx 1 liao liao   33 Nov 23 22:01 foo-sym -&gt; /home/liao/bash_pract/dir/foo.txt
 &gt; -rw-r--r-- 1 liao liao  540 Jul 22 18:17 rmd-head.txt</code></pre>
 </div>
 </div>
