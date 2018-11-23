@@ -20,6 +20,8 @@ comment: false
 
 ## Personal Work
 
+### Authoring Tools
+
 Oct 13, 2018 &nbsp;&nbsp; [ntuthesis](https://liao961120.github.io/ntuthesis)
 
 A [bookdown](https://bookdown.org/yihui/bookdown/) Master and PhD thesis template for National Taiwan University. The template is bundled into an R package, along with several handy functions, to make it easier to use.
@@ -35,6 +37,9 @@ Sep 09, 2018 &nbsp;&nbsp; [linguisticsdown](https://liao961120.github.io/linguis
 An R package that facilitates authoring linguistics-related documents in R Markdown. Features include easy inserting IPA symbols with a Shiny gadget and proper rendering of IPA symbols to PDF outputs.
 {:.indent}
 
+
+### Linguistics Resources
+
 Sep 07, 2018 &nbsp;&nbsp; [PTT Slang](https://liao961120.github.io/PTT-scrapy/)
 
 A small web scraping project for collecting special expressions used by people on [PTT](https://en.wikipedia.org/wiki/PTT_Bulletin_Board_System). The expressions are scraped from an online encyclopedia about PTT.
@@ -42,34 +47,31 @@ A small web scraping project for collecting special expressions used by people o
 
 June 21, 2018 &nbsp;&nbsp; [Taiwan Language Survey](https://twlangsurvey.github.io/main/)  
 
-A web page for visualizing a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It is aimed at raising public awareness of language loss in Taiwan.  
+A web page for visualizing a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It is aimed at raising public awareness of language loss in Taiwan. The survey data is also publicly available.
 (*Updates weekly to continuously incorporate new survey data.*)
 {:.indent}
 
 
-### Tutorials
-
-Nov 21, 2018 &nbsp;&nbsp; [My Bash Notes](https://liao961120.github.io/notes/mylinux.html)
-
-Quick reference on commonly used bash syntax.
-{:.indent}
-
-
-Apr 29, 2018 &nbsp;&nbsp; [R Notes for Multivariate Analysis](https://liao961120.github.io/MVA)  
-
-Working on the book currently.
-{:.indent}
-
+### Learning Resources / Tutorials
 
 Apr 20, 2018 &nbsp;&nbsp; [Google Form: Auto Scoring and Feedback](https://liao961120.github.io/2018/04/20/gsheet_survey.html)  
 
 A blog post about setting up an automatic feedback system based on the response collected from google form. Written in Chinese.
 {:.indent}
 
-
 Mar 18, 2018 &nbsp;&nbsp; [R Markdown Features](https://liao961120.github.io/notes/rmd_features.html)  
 
 A compact reference to [R Markdown](https://rmarkdown.rstudio.com/). Contains useful formatting tips for both PDF and HTML outputs.
+{:.indent}
+
+Nov 21, 2018 &nbsp;&nbsp; [My Bash Notes](https://liao961120.github.io/notes/mylinux.html)
+
+Quick reference on commonly used bash syntax.
+{:.indent}
+
+Apr 29, 2018 &nbsp;&nbsp; [R Notes for Multivariate Analysis](https://liao961120.github.io/MVA)  
+
+Working on the book currently.
 {:.indent}
 
 
