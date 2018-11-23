@@ -13,7 +13,7 @@ comment: false
     }
 </style>
 
-## Personal Work
+## Personal
 
 #### Authoring Tools
 
@@ -72,7 +72,7 @@ Working on the book currently.
 {:.indent}
 
 
-## Team Work
+## Team
 
 Jan 04, 2018 &nbsp;&nbsp; [Travel the World](https://rlads2017g1.github.io/presentation.html)  
 
