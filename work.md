@@ -17,7 +17,7 @@ comment: false
 
 #### Authoring Tools
 
-Oct 13, 2018 &nbsp;&nbsp; [ntuthesis](https://liao961120.github.io/ntuthesis)
+Oct 13, 2018 &nbsp;&nbsp; [NTU Thesis Template](https://liao961120.github.io/ntuthesis)
 
 A [bookdown](https://bookdown.org/yihui/bookdown/) Master and PhD thesis template for National Taiwan University. The template is bundled into an R package, along with several handy functions, to make it easier to use.
 {:.indent}
