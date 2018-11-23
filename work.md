@@ -40,16 +40,18 @@ An R package that facilitates authoring linguistics-related documents in R Markd
 
 #### Linguistic Resources
 
+June 21, 2018 &nbsp;&nbsp; [Taiwan Language Survey](https://twlangsurvey.github.io/main/)  
+
+Visualization of a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It aims to raise public awareness of language loss in Taiwan. The survey data collected is made available publicly.
+(*Updates weekly to continuously incorporate new survey data.*)
+{:.indent}
+
+
 Sep 07, 2018 &nbsp;&nbsp; [PTT Slang](https://liao961120.github.io/PTT-scrapy/)
 
 A small web scraping project for collecting special expressions used by people on [PTT](https://en.wikipedia.org/wiki/PTT_Bulletin_Board_System). The expressions are scraped from an online encyclopedia about PTT.
 {:.indent}
 
-June 21, 2018 &nbsp;&nbsp; [Taiwan Language Survey](https://twlangsurvey.github.io/main/)  
-
-A web page for visualizing a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It is aimed at raising public awareness of language loss in Taiwan. The survey data is also publicly available.
-(*Updates weekly to continuously incorporate new survey data.*)
-{:.indent}
 
 
 #### Learning Resources / Tutorials
