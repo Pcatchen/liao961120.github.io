@@ -37,7 +37,7 @@ An R package that facilitates authoring linguistics-related documents in R Markd
 
 June 21, 2018 &nbsp;&nbsp; [Taiwan Language Survey](https://twlangsurvey.github.io/main/)  
 
-Visualization of a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It aims to raise public awareness of language loss in Taiwan. The survey data collected is made available publicly.  
+Visualization of a [survey](https://docs.google.com/forms/d/e/1FAIpQLSdrZbbh8XHLYBlLFag8_MGJBtDjvDq-32wwGkvHxYzR2brixg/viewform) about language usage in Taiwan. It aims to raise public awareness of language loss in Taiwan. The survey data are made available publicly.  
 (*Updates weekly to continuously incorporate new survey data.*)
 {:.indent}
 
