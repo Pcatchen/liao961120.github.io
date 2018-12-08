@@ -33,6 +33,10 @@ This is a place where I share my notes and some personal experience on learning.
 
 Some of the posts were written in Chinese, and some in English. I'm not a native speaker of English, so please bear with the grammatical errors if you encountered any.
 
+I write my post about R in English when I want to get it published on [R-bloggers](https://www.r-bloggers.com), or when I want to practice my English writing skills. 
+
+It's pretty sad we don't have a platform like [R-bloggers](https://www.r-bloggers.com) in Taiwan. If there is one, I would be writing more about R in Chinese.
+
 ## License
 
 All the posts on my blog are licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>.
