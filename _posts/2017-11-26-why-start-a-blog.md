@@ -4,7 +4,7 @@ tags:
 - experience
 ---
 
-There are many reasons to start a blog. I was inspired by [this post](https://www.r-bloggers.com/advice-to-aspiring-data-scientists-start-a-blog/) and my interest in psychology.
+There are many reasons to start a blog. I was inspired by [this post](http://varianceexplained.org/r/start-blog/) and my interest in psychology.
 <!--more--> 
 
 ## Starting a Blog for Others
