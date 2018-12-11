@@ -56,7 +56,7 @@ Apr 20, 2018 &nbsp;&nbsp; [Google Form: Auto Scoring and Feedback](https://liao9
 A blog post about setting up an automatic feedback system based on the response collected from google form. Written in Chinese.
 {:.indent}
 
-Mar 18, 2018 &nbsp;&nbsp; [R Markdown Features](https://liao961120.github.io/notes/rmd_features)  
+Mar 18, 2018 &nbsp;&nbsp; [R Markdown Features](https://liao961120.github.io/Rmd_ref)  
 
 A compact reference to [R Markdown](https://rmarkdown.rstudio.com/). Contains useful formatting tips for both PDF and HTML outputs.
 {:.indent}
