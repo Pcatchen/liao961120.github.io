@@ -6,7 +6,7 @@ date = 2017-09-20T00:00:00
 # Activate this widget? true/false
 active = true
 
-title = "Skills"
+title = "Programming"
 subtitle = ""
 
 # Order that this section will appear in.
@@ -28,15 +28,16 @@ weight = 49
   description = ""
   
 [[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = ""  
-  
-[[feature]]
-  icon = "camera-retro"
-  icon_pack = "fas"
-  name = "Photography"
+  icon = "linux"
+  icon_pack = "fab"
+  name = "Linux"
   description = ""
+
+[[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "Python"
+  description = ""  
+
 
 +++
