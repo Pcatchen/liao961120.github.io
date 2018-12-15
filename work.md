@@ -33,7 +33,7 @@ An R package that facilitates authoring linguistics-related documents in R Markd
 {:.indent}
 
 
-#### Linguistic Resources
+#### Linguistics
 
 June 21, 2018 &nbsp;&nbsp; [Taiwan Language Survey](https://twlangsurvey.github.io/main/)  
 
