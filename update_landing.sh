@@ -1,6 +1,8 @@
 #!/bin/bash
 cd Hugo-landing
 
+Rscript -e 'blogdown::build_site()'
+
 cp -r docs/css docs-min/
 cp -r docs/css docs-min/
 cp -r docs/img docs-min/

@@ -24,19 +24,19 @@ weight = 49
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
-  name = "R"
+  name = ""
   description = ""
   
 [[feature]]
   icon = "linux"
   icon_pack = "fab"
-  name = "Linux"
+  name = ""
   description = ""
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
-  name = "Python"
+  name = ""
   description = ""  
 
 
