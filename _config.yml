@@ -183,6 +183,7 @@ exclude:
   - "*.rmd"
   - /_site
   - /post_source
+  - /Hugo-landing
 
 defaults:
   - scope:
