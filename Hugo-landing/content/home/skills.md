@@ -7,7 +7,7 @@ date = 2017-09-20T00:00:00
 active = true
 
 title = "Programming"
-subtitle = ""
+subtitle = "<br>"
 
 # Order that this section will appear in.
 weight = 49
