@@ -13,8 +13,8 @@ weight = 3
 #   Deactivate an option by commenting out the line, prefixing it with `#`.
 [header]
   overlay_color = "#666"  # An HTML color value.
-  overlay_img = "headers/road-red.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0.15  # Darken the image. Value in range 0-1.
+  overlay_img = "headers/cabin.jpg"  # Image path relative to your `static/img/` folder.
+  overlay_filter = 0  # Darken the image. Value in range 0-1.
 
 # Call to action button (optional).
 #   Activate the button by specifying a URL and button label below.
@@ -37,4 +37,4 @@ The highly flexible website framework for Hugo with an extensible plugin mechani
 <script async defer src="https://buttons.github.io/buttons.js"></script>
  -->
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
