@@ -1,10 +1,10 @@
 header:
   - titles:
-      en:       Home
+      en:       Blog
       zh:       Home
       zh-Hans:  Home
       zh-Hant:  Home
-    url:        /index.html
+    url:        /blog/
   - titles:
       en:       Tags
       zh:       归档
