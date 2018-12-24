@@ -18,7 +18,7 @@ weight = 5
 # List your qualifications (such as academic degrees).
 
 [[education.courses]]
-  course = "BSc in Psychology"
+  course = "B.S. in Psychology"
   institution = "National Taiwan University"
   year = 2019
  
