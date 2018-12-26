@@ -76,4 +76,6 @@ type: article
 </script>
 
 <!-- Include FB share quote addin -->
-{%- include FBquote.html -%}
+{% if page.tags contains "中文" %}
+  {%- include FBquote.html -%}
+{%- endif -%}
