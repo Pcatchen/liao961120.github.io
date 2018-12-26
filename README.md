@@ -12,6 +12,8 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 
 ### Function Enhancements
 
+- Add Facebook share quote functionality in [article.html](https://github.com/liao961120/liao961120.github.io/blob/master/_layouts/article.html) ([FBquote.html](https://github.com/liao961120/liao961120.github.io/blob/master/_includes/FBquote.html))
+
 - Auto create ID in h1, h2, h3 by name ([article-header.html](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_includes/article-header.html#L51))
 
 - Auto "target_blank" with external URLs ([head.html](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_includes/head.html#L51))
