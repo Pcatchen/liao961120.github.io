@@ -47,10 +47,12 @@ You can contact me via Email or Facebook, the info is in the footer region of th
 
 ## Credits & Acknowledgment
 
-#### **Theme Template**
+### Theme Template
 
 The theme of my blog is [jekyll TeXt theme](https://github.com/kitian616/jekyll-TeXt-theme), and some customization has been done to fit my own tastes. **TeXt theme** is by far the best theme I've seen (according to my tastes), the typeface and clean layout make it comfortable when reading the blog.
 
+### Landing Page
 
+Instead of using **TeXt theme's landing page** feature, I used Hugo's [Academic theme](https://themes.gohugo.io/academic/) for [my landing page](/) since I found it more suitable for my purpose.
 
 <br>
