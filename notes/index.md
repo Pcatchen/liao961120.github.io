@@ -14,9 +14,7 @@ comment: false
       padding-left: 0px;
       font-size:0.88em; 
       background-color: rgba(51, 51, 51, 0);
-      font-style: oblique;
       }
-    .mono { font-family: monospace; }
     p { 
         padding-bottom: 0.3em;
         padding-top: 0.1em;
@@ -24,7 +22,6 @@ comment: false
     ul { list-style-image: none;}
     h2 { padding-top: 1em; }
     h3 { padding-top: 1em; }
-    code { font-size:0.9em; }
 </style>
 
 
