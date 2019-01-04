@@ -48,6 +48,8 @@
   <meta itemprop="headline" content="{{ _article_title }}">
 {%- endif -%}
 
+
+<script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <script>
 // Add Id to h1, h2, h3 to allow TOC
 $(document).ready(function() {
@@ -66,7 +68,7 @@ $(document).ready(function() {
         $(this).attr('id',hyphenated);
     }
     );
-})();
+});
 </script>
 
 <script>
@@ -82,5 +84,5 @@ $(document).ready(function() {
     // right-align a quote footer if it starts with ---
     if (/^—/.test(el.textContent)) el.style.textAlign = 'right';
   }
-})();
+});
 </script>
