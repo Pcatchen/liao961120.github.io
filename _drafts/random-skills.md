@@ -80,6 +80,15 @@ tags: ['experience','中文']
 但我知道有人因為不知道**簡報者模式需配合[延伸螢幕](https://support.microsoft.com/zh-tw/help/4340331/windows-10-set-up-dual-monitors)使用**而未曾使用這個功能(對，就是我！)。透過延伸螢幕，可以在自己的電腦與投影幕上同步顯示投影片，只是其中一個是有筆記的簡報者模式，另一個則是給觀眾看的一般模式。
 
 
+## 電子辭典
+
+
+<figure>
+<img src="/assets/images/golden_dict.gif" alt="GoldenDict" width='85%'/>
+<figcaption>GoldenDict，開源電子辭典軟體。支援多種電子辭典檔案格式，但本身不含字典檔，需額外下載。</figcaption>
+</figure>
+
+
 ## 記錄想法
 
 *沒有記憶就彷彿不曾存在*。生活在資訊量爆炸的時代，「記住重要的事情，忽略不重要的刺激」似乎變成一項重要的能力。如果我們不努力記下重要的事情，那這些記憶就會被其它瑣碎的、不重要的刺激[^redundent]洗掉。
