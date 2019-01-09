@@ -24,6 +24,7 @@ comment: false
     h3 { padding-top: 1em; }
 </style>
 
+`Jan 09, 2018`{:.ori}  [DeepLex note](/Private/DeepLex/){:class="tab0"}
 
 `Oct 07, 2018`{:.ori}  [slides](/slides/){:class="tab0"}
 
