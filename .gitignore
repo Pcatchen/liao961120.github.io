@@ -188,3 +188,5 @@ package-lock.json
 _site/
 .sass-cache/
 .jekyll-metadata
+/Hugo-landing/docs
+/Hugo-landing/docs-min
