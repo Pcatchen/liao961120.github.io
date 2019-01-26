@@ -2,11 +2,12 @@
 title: "網路時代下的寫作"
 subtitle: "Why R Markdown?"
 author: "Yongfu Liao"
-mysite: https://liao961120.github.io
+mysite: https://liao961120.github.io  # 作者網站
 date: "2019-01-22"
-comment: true
-tags: ['R Markdown', 'blogging'] #rblog
-bibliography: ref.bib
+comment: true  # 文章是否開放留言
+FBquote: true  # 是否使用 FB 引文外掛, 見 bit.ly/2sL31Jt
+tags: ['R Markdown', 'blogging']  # 文章 tag
+bibliography: ref.bib             # 參考文獻資料檔
 link-citations: false
 toc-title: '目錄' # option for pagedown
 lot: false  # option for pagedown
@@ -29,18 +30,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-這篇文章並非 **R Markdown** 的教學文[^intro-rmd]，而是一篇**企圖說服**讀者採用 **R Markdown** 作為寫作工具的文章。本文以 **R Markdown** 撰寫並使用 **blogdown** 輸出部落格文章。[原始碼](https://github.com/Rbloggers/coBlogger/tree/master/content/yongfu/write-in-rmd)託管於 GitHub。
+這篇文章並非 **R Markdown** 的教學文[^intro-rmd]，而是一篇**企圖說服**讀者採用 **R Markdown** 作為寫作工具的文章。本文以 **R Markdown** 撰寫並使用 **blogdown** 輸出部落格文章。[原始碼](https://github.com/Rbloggers/collabin/tree/master/content/yongfu/write-in-rmd)託管於 GitHub。
 
+![](RmdOutputFormats.png){style='width:30%;float: right;padding-left:18px'}
 從第一次接觸 **R Markdown** 至今經過了一年又三個月。而最近六個多月，我都沒有使用過 Microsoft Word 寫東西，因為 **R Markdown** 強大的功能使我得以不用 Word 也能生存 -- 我用 **R Markdown** 寫[作業](https://liao961120.github.io/notes/106-2/multivariate/HW2.html)、[文章](https://github.com/liao961120/ling-rmd/blob/master/main.pdf)、[書](https://liao961120.github.io/MVA)、[論文](https://liao961120.github.io/ntuthesis)和部落格 (本文)，製作[筆記](https://liao961120.github.io/notes/mylinux.html)、[投影片](https://liao961120.github.io/slides/xaringan)、甚至[網頁](https://twlangsurvey.github.io)。事實上，這正是 **R Markdown** 最吸引人的地方：
 
 > 用相同的語法撰寫各式類型的文件。
-
 
 ## 兩種媒介：紙本 vs. 網頁 {#printing-vs-surfing}
 
 寫作的目的有一部分是**要給人看**，因此[排版](https://zh.wikipedia.org/wiki/排版)自然而然就成為作者的工作之一。在文字普及後的絕大多數時間，排版僅需要考慮**紙本印刷物**。即使十幾年前電腦已十分盛行，排版軟體仍主要在解決**紙本印刷物**的排版問題。這本身不是個問題，但在今日網路變為主流的資訊傳播管道，**網頁因而成為與紙本同等重要的文字承載媒介**。
 
-這對文字工作者造成了新的負擔，因為兩種不同的文字承載媒介 -- **紙本**與**網頁**，在歷史上各自衍生出兩種設計邏輯十分迥異的排版系統， [$\TeX$](https://zh.wikipedia.org/wiki/TeX) 以及 [HTML](https://zh.wikipedia.org/wiki/HTML)，而這兩種系統彼此是無法互相翻譯轉換的 (例如，嘗試使用 Chrome 將網頁轉存成 PDF 時，你會發現一張圖片常被分割在不同頁面)。因此，今日的文字工作者在寫作前要先回答一個問題：
+這對文字工作者^[這裡對文字工作者的定義很廣，任何常寫文章的人都可算是文字工作者 (例如，學生) 。]造成了新的負擔，因為兩種不同的文字承載媒介 -- **紙本**與**網頁**，在歷史上各自衍生出兩種設計邏輯十分迥異的排版系統， [$\TeX$](https://zh.wikipedia.org/wiki/TeX) 以及 [HTML](https://zh.wikipedia.org/wiki/HTML)，而這兩種系統彼此是無法互相翻譯轉換的 (例如，嘗試使用 Chrome 將網頁轉存成 PDF 時，你會發現一張圖片常被分割在不同頁面)。因此，今日的文字工作者在寫作前要先回答一個問題：
 
 > 我的作品會活在**網路上**還是要**印出來**？
 
@@ -64,7 +65,7 @@ knitr::include_graphics('https://bit.ly/2DsQ9Od')
 
 ## Markdown：改善 WYSIWYM {#md-enhance}
 
-面對過於複雜的標記式語言，[John Gruber](https://en.wikipedia.org/wiki/John_Gruber) 發明了 Markdown 以解決撰寫網頁時，過於複雜的 HTML 語法。Markdown 是一種容易學習、極為簡化的標記式語言。事實上，由於原始的 Markdown 語法過於簡單^[Markdown 的語法雖然簡單，但這並不代表其排版能力弱於 HTML，因為 Markdown 語法可與 HTML 混用。]，造成許多衍生「風格」Markdown 的發明以擴充原本不足的語法。這也間接導致今日 Markdown 並非可通行 (portable) 於所有聲稱支援 Markdown 的平台。
+面對過於複雜的標記式語言，[John Gruber](https://en.wikipedia.org/wiki/John_Gruber) 發明了 Markdown 以解決撰寫網頁時過於複雜的 HTML 語法。Markdown 是一種容易學習、極為簡化的標記式語言。事實上，由於原始的 Markdown 語法過於簡單^[Markdown 的語法雖然簡單，但這並不代表其排版能力弱於 HTML，因為 Markdown 語法可與 HTML 混用。]，造成許多衍生「風格」Markdown 的發明以擴充原本不足的語法。這也間接導致今日 Markdown 並非可通行 (portable) 於所有聲稱支援 Markdown 的平台。
 
 ```{r md2html, echo=FALSE, fig.cap='Markdown 轉換成 HTML'}
 knitr::include_graphics('md2html.png')
