@@ -45,25 +45,17 @@
 {%- assign _sources = __return -%}
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
 
-
-<script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-<script>
-// Add target_blank to external link
-// See article-header.html for auto adding ID to h1,h2,h3
-$(document).ready(function() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
-      links[i].target = '_blank';
-    }
-  }
-});
-</script>
-
 <!-- Add highlight.js -->
 {% if page.highlight == true %}
 <link rel="stylesheet" href="/assets/highlightJS/styles/tomorrow-night-bright.css">
 <script src="/assets/highlightJS/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-
 {% endif %}
+
+
+{%- if page.layout == 'article' -%}
+<script  src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script>{%- include scripts/add_targetblank.js -%}</script>
+<script>{%- include scripts/add_header_id.js -%}</script>
+<script>{%- include scripts/align_blockquote.js -%}</script>
+{%- endif -%}
