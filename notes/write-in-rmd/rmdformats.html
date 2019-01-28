@@ -1648,7 +1648,7 @@ Figure 4: <strong>R Markdown</strong> 運作流程。先由 <code>knitr</code> �
 <p>這個問題對於自行架設部落格的使用者可能是個問題，因為當其想換新的網頁模板時，可能使用不同的靜態網頁產生器 (例如，Jekyll &gt; Hugo)，而原本以 Markdown 撰寫的文章在新的靜態網頁產生器可能會語法不相容。<strong>R Markdown</strong> 在此可以解決這個問題：透過 <a href="https://rmarkdown.rstudio.com/html_fragment_format.html"><code>html_fragment</code></a> 輸出格式，靜態網頁產生器能透過 <strong>R Markdown</strong> 輸出的 HTML，而不非語法不一的 Markdown，產生網頁。</p></li>
 <li><p>程式語言支持</p>
 <p><strong>R Markdown</strong> 的另一個特色是程式語言的整合。<strong>即使不會寫程式，背後有程式語言支持的 R Markdown 仍能提供使用者非常方便的功能</strong>。<strong>R Markdown</strong> 支援使用特殊語法在文件<strong>內文插入變項</strong>，例如，我可以在文內插入 <strong>R</strong> 「回傳目前時間的函數」，自動顯示文件輸出時的時間：</p>
-<p><code>上次更新：`r Sys.time()`</code> 會輸出成：<code>上次更新：2019-01-27 18:44:40</code></p>
+<p><code>上次更新：`r Sys.time()`</code> 會輸出成：<code>上次更新：2019-01-28 21:23:27</code></p>
 <p>這個功能對於從事數據分析的使用者 (e.g. 寫統計學作業的學生) 非常方便。例如，他可以使用 <code><em>p</em>-value = `r pval`</code> (<code>pval</code> 儲存先前計算出來的數值) 直接在內文插入 <em>p</em>-value，而不用在每次數據更新時 (例如發現之前資料有誤)，重新手動複製貼上數值。</p></li>
 <li><p>強大的靠山</p>
 <p><strong>R</strong> 社群今日能如此活躍，有很大一部分是因為 <a href="https://www.rstudio.com/">RStudio</a> 這家公司的推行。<strong>R</strong> 使用者用到的許多套件是由 RStudio 僱用的工程師專職開發的，因此，這些套件會持續的維護、更新、出現更強大的新功能。</p>
@@ -1664,6 +1664,14 @@ Figure 4: <strong>R Markdown</strong> 運作流程。先由 <code>knitr</code> �
 </div>
 <div id="conclusion" class="section level2">
 <h2>小結</h2>
+<ul>
+<li><p>因為歷史因素，現存兩種文字承載媒介 – 紙本和網頁。對多數人來說，必需<strong>在使用紙本發表或使用網頁發表之間抉擇</strong>。</p></li>
+<li><p>排版軟體有兩種設計邏輯 – WYSIWYG vs. WYSIWYM，各自存在優缺點。WYSIWYG 使用起來直覺，但檔案管理不便；WYSIWYM 則語法複雜，但作出十分精美之排版且檔案管理方便。</p></li>
+<li><p>Markdown 結合了過去 WYSIWYG 和 WYSIWYM 的優點，也解決了兩者的缺點。同時，Markdown 也有潛力解決紙本發表與網頁發表之間的矛盾。</p></li>
+<li><p>R Markdown 擴充 Markdown 語法使其能撰寫相當複雜的文件 (如期刊文章、書籍、網站等) 並結合程式語言的支持，自動化許多麻煩事，讓使用者能快速上手使用。</p></li>
+<li><p>面對<strong>紙本 vs. 網頁</strong>，未來似乎向著以網頁為文字承載媒介主流的世界前進。而資訊科技的發展，使得紙本印刷之排版困難逐漸能被網頁技術解決。</p></li>
+</ul>
+<hr />
 <blockquote>
 <p>I have a dream that one day all students and researchers will forget what “formatting a paper” even means. I have a dream that one day journals and grad schools no longer have style guides. I have a dream that one day no missing $ is inserted, and \hbox is never overfull.</p>
 <p>— Yihui Xie<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a></p>
