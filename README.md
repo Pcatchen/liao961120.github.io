@@ -4,6 +4,10 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 
 ## Changelog
 
+### Maintainance
+
+- Refactor "Auto create h1, h2, h3 ID", "`target_blank` with external URLs", and "Right Align blockquote author" in `_includes/head.html` and `scripts/add_targetblank.js, add_header.js, align_blockquote.js` ([commit](https://github.com/liao961120/liao961120.github.io/commit/948e6300758d03609e66e7e318fd15bae0e22001))
+
 ### Social Enhancements
 
 - Fix disqus problems ([commit1](https://github.com/liao961120/liao961120.github.io/commit/397c1d7d84e853e68a12289c242a5f2ad142e6cd), [commit2](https://github.com/liao961120/liao961120.github.io/commit/1a5262c450f2010fdf239bd30c43b4aa11f95960))
