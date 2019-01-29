@@ -6,7 +6,7 @@ title = "臺灣語言使用調查"
 date = 2018-09-09
 
 # Project summary to display on homepage.
-summary = "Facilitate authoring linguistics-related documents in R Markdown."
+summary = "Visualization of a survey about language usage in Taiwan."
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
