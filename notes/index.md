@@ -24,7 +24,9 @@ comment: false
     h3 { padding-top: 1em; }
 </style>
 
-`Jan 09, 2018`{:.ori}  [DeepLex note](/Private/DeepLex/){:.tab0}
+`Jan 31, 2019`{:.ori}  [Parallel Text for R, Python, and Bash](/parallelCode){:.tab0}
+
+`Jan 09, 2019`{:.ori}  [DeepLex note](/Private/DeepLex/){:.tab0}
 
 `Oct 07, 2018`{:.ori}  [slides](/slides/){:.tab0}
 
