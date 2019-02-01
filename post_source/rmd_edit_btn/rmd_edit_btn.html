@@ -1,0 +1,97 @@
+
+
+
+<!--For external images, set self_contained: false-->
+<!--yaml
+---
+mermaid: false
+mathjax: false
+mathjax_autoNumber: false
+highlight: true
+title: 'Inserting “Edit on GitHub” Buttons in a Single R Markdown Document'
+description: ""
+tags: ['R', 'R Markdown', 'R-bloggers']
+---
+yaml-->
+<p>As the R Markdown ecosystem becomes larger, users now may encounter situations where they have to make decisions on which output format of R Markdown to use.
+One may found <strong>none of the formats suitable</strong> – the features essential to the output document you want may be scattered around (and only supported by) different output formats of R Markdown.</p>
+<p>Here is a real example I encountered. I wanted to create a document that:</p>
+<ol class="example" style="list-style-type: decimal">
+<li>supports <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html">bookdown syntax</a>, e.g. text references.</li>
+<li>has an “Edit on GitHub” button for every chapter that links to the edit page of the source <code>.Rmd</code> on GitHub</li>
+</ol>
+<p>The above two features can be easily obtained using bookdown’s default GitBook output format, but one more feature is essential to the document I want:</p>
+<ol start="3" class="example" style="list-style-type: decimal">
+<li>supports <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#tabbed-sections">tabsets</a><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></li>
+</ol>
+<p>So basically, I wanted <code>bookdown::gitbook</code> that supports tabbed sections, just like Fig. <a href="#fig:gitbook">1</a>. No, it’s not possible now. This is a feature unique to <code>rmarkdown::html_document</code>, <a href="https://github.com/rstudio/bookdown/issues/393">not <code>bookdown::gitbook</code></a>.</p>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">include_graphics</span>(<span class="st">&#39;/post_source/rmd_edit_btn/book_tabset.png&#39;</span>)</code></pre>
+<div class="figure"><span id="fig:gitbook"></span>
+<img src="/post_source/rmd_edit_btn/book_tabset.png" alt="`bookdown::gitbook` supports tabbed sections? This is just a fake figure." width="100%" />
+<p class="caption">
+Figure 1: <code>bookdown::gitbook</code> supports tabbed sections? This is just a fake figure.
+</p>
+</div>
+<p>My first thought was to find out how to add the tabbed sections feature to <code>bookdown::gitbook</code> using JavaScript, but I’m not familiar with JS and it just gave me a headache. So I turned to <code>bookdown::html_document2</code>, which is based on <code>rmarkdown::html_document</code>.</p>
+<div id="adding-i-classfa-fa-editi-to-level-one-headings" class="section level2">
+<h2>Adding <code>&lt;i class=&quot;fa fa-edit&quot;&gt;&lt;/i&gt;</code> to Level One Headings</h2>
+<p>The <a href="https://github.com/liao961120/parallelCode">source of my document</a> is a bookdown project, which has <strong>several <code>.Rmd</code> files</strong>.
+Each <code>.Rmd</code> files starts with a level-one heading and defines a single chapter.
+Setting <code>bookdown::html_document2</code> as the output format can only create a single document output (as opposed to <code>bookdown::gitbook</code> which creates several HTML files by default),
+so if I want to add an “Edit on GitHub” button for every chapter, I have to track the <strong>original <code>.Rmd</code> that generates the particular chapter</strong>.</p>
+<div id="merge-and-knit-vs.-knit-and-merge" class="section level3">
+<h3>“Merge and Knit” vs. “Knit and Merge”</h3>
+<p>There are <a href="https://bookdown.org/yihui/bookdown/new-session.html">two rendering approaches</a> in bookdown. The default is <strong>Merge and Knit</strong>, which combines all source <code>.Rmd</code> files into one single <code>.Rmd</code> file and then knits the document. In this case, it will be impossible to track the source <code>.Rmd</code> file for each chapter (unless I create a lookup table manually).
+I can track the source <code>.Rmd</code> files easily, however, if I render the document using the <strong>Knit and Merge</strong> approach. Using <code>knitr::current_input()</code>, I can retrieve the <code>.Rmd</code> file name while knitting the file, and this gives me all I need to create the link to the edit page of the <code>.Rmd</code> source file on GitHub.</p>
+</div>
+<div id="setting-up-_bookdown.yml" class="section level3">
+<h3>Setting up: <code>_bookdown.yml</code></h3>
+<p>To switch from the default “Merge and Knit” to “Knit and Merge”, set <code>new_session: yes</code> in <code>_bookdown.yml</code>:</p>
+<pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">new_session:</span><span class="at"> yes</span>
+<span class="fu">before_chapter_script:</span><span class="at"> </span><span class="st">&#39;addons/pre_chap.R&#39;</span></code></pre>
+</div>
+<div id="setting-up-addonspre_chap.r" class="section level3">
+<h3>Setting up: <code>addons/pre_chap.R</code></h3>
+<p>To insert the link to the edit page on GitHub from the <code>.Rmd</code> filename, I put <code>`r edit_btn`</code> (inline R code) at the end of the h1 heading of each <code>.Rmd</code> file, for <a href="https://github.com/liao961120/parallelCode/blob/4ea55dba03feef91ecf12e1014000fedabcc184b/00-functional_programming.Rmd#L1">example</a>:</p>
+<pre class="sourceCode markdown"><code class="sourceCode markdown"><span class="fu"># Function Factories `r edit_btn`</span></code></pre>
+<p><code>edit_btn</code> is a string computed from the R script <code>addons/pre_chap.R</code>, which is run every time before knitting a <code>.Rmd</code> file:</p>
+<pre class="sourceCode r"><code class="sourceCode r">url &lt;-<span class="st"> &#39;https://github.com/liao961120/parallelCode/edit/master/&#39;</span>
+gh_edit_path &lt;-<span class="st"> </span><span class="kw">paste0</span>(url, knitr<span class="op">::</span><span class="kw">current_input</span>())
+
+edit_btn &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&#39;&lt;a href=&quot;&#39;</span>, gh_edit_path, <span class="st">&#39;&quot;&gt;&#39;</span>,
+                   <span class="st">&#39;&lt;i class=&quot;fa fa-edit&quot; &#39;</span>,
+                   <span class="st">&#39;style=&quot;font-size: 0.5em;&quot;&gt;&lt;/i&gt;&lt;/a&gt;&#39;</span>)</code></pre>
+<p>Remember to include <code>addons/pre_chap.R</code> in the <code>before_chapter_script</code> field in <code>_bookdown.yml</code>.</p>
+</div>
+<div id="setting-up-_output.yml" class="section level3">
+<h3>Setting up: <code>_output.yml</code></h3>
+<p>This is the output format I set in <code>_output.yml</code>:</p>
+<pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">bookdown:</span><span class="at">:html_document2:</span>
+  <span class="fu">theme:</span><span class="at"> readable</span>
+  <span class="fu">highlight:</span><span class="at"> default</span>
+  <span class="fu">toc:</span><span class="at"> true</span>
+  <span class="fu">toc_depth:</span><span class="at"> 2</span>
+  <span class="fu">toc_float:</span>
+    <span class="fu">collapsed:</span><span class="at"> false</span>
+  <span class="fu">includes:</span>
+    <span class="fu">before_body:</span><span class="at"> addons/font_awesome.html</span>
+  <span class="fu">css:</span><span class="at"> addons/style.css</span>
+  <span class="fu">self_contained:</span><span class="at"> false</span></code></pre>
+<p>Note that in order to use <i class="fa fa-edit"></i>, one has to import the <a href="https://origin.fontawesome.com/start">fontawesome style sheet</a>, since <code>html_document</code> doesn’t support it.
+I put the <code>&lt;link&gt;</code> tag that imports fontawesome style sheet in <code>addons/font_awesome.html</code> and included it using <code>before_body:</code> under <code>includes:</code></p>
+<p><code>addons/font_awsome.html</code>:</p>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://use.fontawesome.com/releases/v5.7.0/css/all.css&quot;</span><span class="ot"> integrity=</span><span class="st">&quot;sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ&quot;</span><span class="ot"> crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span></code></pre>
+</div>
+</div>
+<div id="path-problems-caused-by-self_contained-false" class="section level2">
+<h2>Path Problems Caused by <code>self_contained: false</code></h2>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The reason I wanted this feature is that I’m writing a document (actually, a note) that works like a <a href="https://en.wikipedia.org/wiki/Parallel_text">parallel text</a>.
+I know three programming languages – R, Bash, and Python, but I’m only familiar with R, sometimes struggles with the weird syntax of Bash (that said, I like Bash pretty much, for its power to do quick and dirty works), and not familiar with Python at all.
+By creating a <a href="https://liao961120.github.io/parallelCode">parallel text for R, Bash, and Python</a>, I can write down the code to deal with some common tasks in these three langauges, so I don’t have to look it up on google every time I forgot the syntax of the langauge.</p>
+<p>I planned to write this document myself initially. But why not do a little more work to make it convenient for others to contribute to this document? This is why I decided to add an “Edit on GitHub” button at the start of every chapter of the document.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
