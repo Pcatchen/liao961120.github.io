@@ -116,13 +116,13 @@ pl &lt;-<span class="st"> </span><span class="kw">ggplot</span>(df0, <span class
 <span class="st">  </span><span class="kw">geom_bar</span>(<span class="dt">stat =</span> <span class="st">&#39;identity&#39;</span>) <span class="op">+</span>
 <span class="st">  </span><span class="kw">coord_flip</span>()
 pl</code></pre>
-<p><img src="../../assets/unnamed-chunk-1-1.png" width="70%" /></p>
+<p><img src="../../assets/visualize-language-loss/unnamed-chunk-1-1.png" width="70%" /></p>
 <p>To center the plot (i.e. to make the point where population size is zero at the center of the plot), we have to scale the axis of ‘population size’ (<code>y</code>) with <code>scale_y_continuous</code>:</p>
 <pre class="sourceCode r"><code class="sourceCode r">pl <span class="op">+</span><span class="st"> </span><span class="kw">scale_y_continuous</span>(<span class="dt">limits =</span> <span class="kw">c</span>(<span class="op">-</span><span class="dv">100</span>, <span class="dv">100</span>),
                         <span class="dt">breaks =</span> <span class="kw">seq</span>(<span class="op">-</span><span class="dv">100</span>, <span class="dv">100</span>, <span class="dv">25</span>),
                         <span class="dt">labels =</span> abs) <span class="op">+</span>
 <span class="st">  </span><span class="kw">labs</span>(<span class="dt">y =</span> <span class="st">&#39;Population Size&#39;</span>)</code></pre>
-<p><img src="../../assets/unnamed-chunk-2-1.png" width="70%" /></p>
+<p><img src="../../assets/visualize-language-loss/unnamed-chunk-2-1.png" width="70%" /></p>
 <p>where <code>abs</code> in <code>labels</code> is the function <code>abs()</code>. By default, <code>ggplot2</code> pass the value given in <code>breaks</code> to the the function specified in <code>labels</code>.</p>
 </div>
 <div id="visualizing-language-loss" class="section level2">
@@ -868,7 +868,7 @@ pl_data <span class="op">%&gt;%</span>
 pl_data <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">filter</span>(ethn_group <span class="op">==</span><span class="st"> &#39;Ind&#39;</span>) <span class="op">%&gt;%</span><span class="st"> </span>
 <span class="st">  </span><span class="kw">pl_pyramid</span>(<span class="dt">title =</span> <span class="st">&#39;Formosan Languages&#39;</span>) <span class="op">+</span><span class="st"> </span>tweak</code></pre>
-<p><img src="../../assets/unnamed-chunk-12-1.svg" width="49%" /><img src="../../assets/unnamed-chunk-12-2.svg" width="49%" /></p>
+<p><img src="../../assets/visualize-language-loss/unnamed-chunk-12-1.svg" width="49%" /><img src="../../assets/visualize-language-loss/unnamed-chunk-12-2.svg" width="49%" /></p>
 <p>Wait! It seems quite strange. The age-sex pyramid of ‘Formosan Languages’ doesn’t look like a pyramid at all!
 This is because there were very few subjects defined as ‘indigenous people’ in the survey. To make plots like this (with only one or two age groups) comparable to others (such as that in ‘Mandarin’), we need one more function to <strong>insert missing age groups</strong> to the data frame so that ggplot can draw empty bars for us.</p>
 <p>First, we need to find out <strong>all age groups in the data</strong>:</p>
@@ -925,7 +925,7 @@ py6 &lt;-<span class="st"> </span>pl_data <span class="op">%&gt;%</span>
 <span class="st">  </span><span class="kw">pl_pyramid</span>(<span class="dt">title =</span> <span class="st">&#39;English&#39;</span>) <span class="op">+</span><span class="st"> </span>tweak2
 
 <span class="kw">multiplot</span>(py1, py2, py3, py4, py5, py6, <span class="dt">cols =</span> <span class="dv">2</span>)</code></pre>
-<p><img src="../../assets/unnamed-chunk-16-1.svg" width="100%" /></p>
+<p><img src="../../assets/visualize-language-loss/unnamed-chunk-16-1.svg" width="100%" /></p>
 </div>
 </div>
 <div id="language-loss-in-taiwan" class="section level2">

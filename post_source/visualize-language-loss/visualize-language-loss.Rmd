@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE,
 	comment = "",
-	fig.path = "../../assets/"
+	fig.path = "../../assets/visualize-language-loss/"
 )
 ```
 

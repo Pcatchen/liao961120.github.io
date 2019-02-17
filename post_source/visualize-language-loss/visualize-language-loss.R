@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	warning = FALSE,
 	comment = "",
-	fig.path = "../../assets/"
+	fig.path = "../../assets/visualize-language-loss/"
 )
 
 #' [Taiwan Language Survey](https://twlangsurvey.github.io) is a small project I worked on during May to June in 2018. The idea was to create a survey that **continuously** collects data and a web page that visualizes the collected data. The web page is updated weekly using [Travis-CI](https://travis-ci.org/twLangSurvey/twLangSurvey.github.io).
