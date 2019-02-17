@@ -40,7 +40,6 @@ knitr::opts_chunk$set(
 #' ## Age-Sex Pyramid of Language {#age-sex-pyramid-of-language}
 #' 
 #' The age-sex pyramid is used to visualize the population structure of a community. The vertical axis indicates the age and each horizontal bar represents an age group. The horizontal axis indicates the population size of male or female of a particular age group.
-#' ![population-pyramid](https://yongfu.updog.co/pop_pyramid.png){style="width:33%;float: right;padding-left:10px;padding-top:7px"}
 #' 
 #' The age-sex pyramid is a great tool to visualize the population structure since the 'shape' of the pyramid gives readers a lot information. For example, an 'expansive pyramid' has longer bars at the bottom of the pyramid, which indicates the population is young and growing. A 'stationary pyramid' looks like a rectangular bar, indicating the population sizes of different age groups are about the same. A 'constructive' pyramid indicates a shrinking population, which is narrowed at the bottom.
 #' 
