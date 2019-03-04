@@ -16,8 +16,8 @@ This is the source repo of my [personal page](https://liao961120.github.io/). Th
 
 ### Function Enhancements
 
-- Add Facebook [quote plugin](https://developers.facebook.com/docs/plugins/quote) in [article.html](https://github.com/liao961120/liao961120.github.io/blob/master/_layouts/article.html)
-([FBquote.html](https://github.com/liao961120/liao961120.github.io/blob/master/_includes/FBquote.html), [commit](https://github.com/liao961120/liao961120.github.io/commit/febd510d2587f1a23ba36f3e703d29d4273c5b00))
+- <s>Add Facebook [quote plugin](https://developers.facebook.com/docs/plugins/quote) in [article.html](https://github.com/liao961120/liao961120.github.io/blob/master/_layouts/article.html)
+([FBquote.html](https://github.com/liao961120/liao961120.github.io/blob/master/_includes/FBquote.html), [commit](https://github.com/liao961120/liao961120.github.io/commit/febd510d2587f1a23ba36f3e703d29d4273c5b00))</s>
 
 - Auto create ID in h1, h2, h3 by name ([article-header.html](https://github.com/liao961120/liao961120.github.io/blob/0c7717ea8682155d926450101b5c7505f9cc6ec1/_includes/article-header.html#L51))
 
