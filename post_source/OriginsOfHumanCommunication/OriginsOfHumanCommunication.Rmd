@@ -19,7 +19,7 @@ mermaid: false
 mathjax: false
 mathjax_autoNumber: false
 highlight: true
-title: "閱讀筆記：Tomasello 2008"
+title: "閱讀筆記：Origins of Human Communication"
 description: ""
 tags: [Linguistics, Psychology, Evolution, 中文]
 ---
