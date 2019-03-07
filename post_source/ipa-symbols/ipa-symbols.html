@@ -10,7 +10,7 @@ mathjax: false
 highlight: true
 title: "Rendering IPA Symbols in R Markdown"
 description: ""
-tags: [R, R Markdown, LaTeX, R-bloggers]
+tags: [Linguistics, R Markdown, R, LaTeX, R-bloggers]
 ---
 yaml-->
 <p>I was thinking about promoting reproducible research in Linguistics, or more precisely, how to attract people with no programming skills to have incentives to learn at least a bit programming, so that they have the ability to make their research more reproducible. <!--more--></p>
@@ -23,7 +23,7 @@ yaml-->
 <li>Drawing syntax trees.</li>
 </ol>
 <p>To enhance R Markdown’s ability to do these tasks without compromising one of it’s great feature: render nicely to both HTML and PDF with the same source, one needs to consider the incompatiblity of LaTeX and HTML code.</p>
-<p>Solving the first problem (IPA symbol) is easy, draing syntax trees is hard and I haven’t have a solution yet<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+<p>Solving the first problem (IPA symbol) is easy, draing syntax trees is hard and I haven’t have a solution yet<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 </div>
 <div id="typing-ipa-symbols" class="section level2">
 <h2>Typing IPA Symbols</h2>
@@ -71,7 +71,7 @@ if (knitr::opts_knit$get('rmarkdown.pandoc.to') == &quot;latex&quot;) {
 <h2>Obstacles to Adopting a Reproducible Workflow</h2>
 <p><em>Skip this section if you’re tired of stuff about reproducibility and R Markdown.</em></p>
 <p>Reproducible research not only enhance scientific progress but also saves researchers a great deal of time, by automating repetitive and error-prone tasks in research. So if there are good reasons to adopt a reproducible workflow in research, saving time (in the long run) might be a good one.</p>
-<p>Programming skill is fundamental to automating repetitive tasks, which saves one’s time. However, learning programming to save time makes no sense to many people, since it is terrifying, hard, and time consumming<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. So the problem now becomes:</p>
+<p>Programming skill is fundamental to automating repetitive tasks, which saves one’s time. However, learning programming to save time makes no sense to many people, since it is terrifying, hard, and time consumming<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. So the problem now becomes:</p>
 <blockquote>
 <p>How to reinforce the incentive to learn programming?</p>
 </blockquote>
@@ -91,8 +91,8 @@ if (knitr::opts_knit$get('rmarkdown.pandoc.to') == &quot;latex&quot;) {
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>There are LaTeX packages supporting drawing syntax tree, but LaTeX package is not compatible with HTML output.<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>I actually stared and gave up learning programming languages three times (C++, C, and then Python) before I successfully learned R.<a href="#fnref2">↩</a></p></li>
+<li id="fn1"><p>There are LaTeX packages supporting drawing syntax tree, but LaTeX package is not compatible with HTML output.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>I actually stared and gave up learning programming languages three times (C++, C, and then Python) before I successfully learned R.<a href="#fnref2" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

@@ -16,7 +16,7 @@ mathjax: false
 highlight: true
 title: "Easy Linguistics Document Writing with R Markdown"
 description: "Easy Linguistics Document Writing with R Markdown"
-tags: [R Markdown, R, R-bloggers]
+tags: [Linguistics, R Markdown, R, R-bloggers]
 ---
 yaml-->
 

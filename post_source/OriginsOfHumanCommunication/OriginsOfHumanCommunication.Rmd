@@ -39,7 +39,7 @@ library(knitr)
 ```
 
 
-去年秋天在準備研究所甄試時，發現市面上的語言學概論課本對於筆試幾乎沒有任何幫助，於是去找認知語言學相關的專著和文章來閱讀。我找的第一本書是 [George Lakoff](https://en.wikipedia.org/wiki/George_Lakoff) 的 [*Metaphors We Live By*](https://en.wikipedia.org/wiki/Metaphors_We_Live_By)。閱讀此書時，發覺自己又面臨一個陌生、龐大、擁有一堆術語的領域，而且認知語言學中的「認知」似乎和我所熟悉的「認知」心理學不太一樣，很難從自己熟悉的角度去切入作者的想法。於是我換了一本書 -- @geeraerts2006。這本書由一篇篇獨立的文章組成，每篇文章由一或兩位從事認知語言學相關研究的學者撰寫。在 @geeraerts2006 中，我發現一個熟悉的名字 -- [Michael Tomasello](https://en.wikipedia.org/wiki/Michael_Tomasello)。當時我對 Tomasello 並不熟悉，僅知道他是個有名的心理學家，研究興趣與這些關鍵字有關：*Language acquisition*, *Joint attention*, *Primate cognition*。閱讀 Tomasello 的文章後，我終於開始抓到一點認知語言學的想法。果然，要了解一個陌生的領域最好還是從自己熟悉的思維下手。
+去年秋天在準備研究所甄試時，發現市面上的語言學概論課本對於筆試幾乎沒有任何幫助，於是去找認知語言學相關的專著和文章來閱讀。我找的第一本書是 [George Lakoff](https://en.wikipedia.org/wiki/George_Lakoff) 的 [*Metaphors We Live By*](https://en.wikipedia.org/wiki/Metaphors_We_Live_By)。<!--more-->閱讀此書時，發覺自己又面臨一個陌生、龐大、擁有一堆術語的領域，而且認知語言學中的「認知」似乎和我所熟悉的「認知」心理學不太一樣，很難從自己熟悉的角度去切入作者的想法。於是我換了一本書 -- @geeraerts2006。這本書由一篇篇獨立的文章組成，每篇文章由一或兩位從事認知語言學相關研究的學者撰寫。在 @geeraerts2006 中，我發現一個熟悉的名字 -- [Michael Tomasello](https://en.wikipedia.org/wiki/Michael_Tomasello)。當時我對 Tomasello 並不熟悉，僅知道他是個有名的心理學家，研究興趣與這些關鍵字有關：*Language acquisition*, *Joint attention*, *Primate cognition*。閱讀 Tomasello 的文章後，我終於開始抓到一點認知語言學的想法。果然，要了解一個陌生的領域最好還是從自己熟悉的思維下手。
 
 
 ## 語言到底是什麼？

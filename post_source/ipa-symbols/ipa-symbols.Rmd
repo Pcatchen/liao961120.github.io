@@ -22,7 +22,7 @@ mathjax: false
 highlight: true
 title: "Rendering IPA Symbols in R Markdown"
 description: ""
-tags: [R, R Markdown, LaTeX, R-bloggers]
+tags: [Linguistics, R Markdown, R, LaTeX, R-bloggers]
 ---
 yaml-->
 

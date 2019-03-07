@@ -9,7 +9,7 @@ mathjax: false
 mathjax_autoNumber: false
 highlight: true
 title: 'Visualizing Language Loss in Taiwan: Create an “Age-Sex Pyramid of Language” with ggplot2'
-tags: ['visualization', 'Web Page', 'Travi-CI', 'R', 'R-bloggers']
+tags: ['Linguistics', 'visualization', 'Web Page', 'Travi-CI', 'R', 'R-bloggers']
 ---
 yaml-->
 <p><a href="https://twlangsurvey.github.io">Taiwan Language Survey</a> is a small project I worked on during May to June in 2018. The idea was to create a survey that <strong>continuously</strong> collects data and a web page that visualizes the collected data. The web page is updated weekly using <a href="https://travis-ci.org/twLangSurvey/twLangSurvey.github.io">Travis-CI</a>.</p>
@@ -448,7 +448,7 @@ data &lt;-<span class="st"> </span>readr<span class="op">::</span><span class="k
 </tbody>
 </table>
 </div>
-<p>The survey data, <code>data</code>, contains 22 variables and 257 observations (subjects). I only need these variables below to create the plot I want:</p>
+<p>The survey data, <code>data</code>, contains 22 variables and 264 observations (subjects). I only need these variables below to create the plot I want:</p>
 <ul>
 <li><code>gender</code>: The gender of the subject</li>
 <li><code>age</code>: The age of the subject</li>
@@ -817,13 +817,13 @@ ethn_list_df &lt;-<span class="st"> </span><span class="kw">vector</span>(<span 
 <td align="left">Female</td>
 <td align="left">Eng</td>
 <td align="left">[30,35)</td>
-<td align="right">3.000000</td>
+<td align="right">2.000000</td>
 </tr>
 <tr class="odd">
 <td align="left">Female</td>
 <td align="left">Eng</td>
 <td align="left">[35,40)</td>
-<td align="right">1.666667</td>
+<td align="right">1.750000</td>
 </tr>
 <tr class="even">
 <td align="left">Female</td>

@@ -18,7 +18,7 @@
 #' mathjax_autoNumber: false
 #' highlight: true
 #' title: 'Visualizing Language Loss in Taiwan: Create an “Age-Sex Pyramid of Language” with ggplot2'
-#' tags: ['visualization', 'Web Page', 'Travi-CI', 'R', 'R-bloggers']
+#' tags: ['Linguistics', 'visualization', 'Web Page', 'Travi-CI', 'R', 'R-bloggers']
 #' ---
 #' yaml-->
 #' 
