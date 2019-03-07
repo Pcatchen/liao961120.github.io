@@ -1,6 +1,6 @@
 ---
 title: "ntuthesis：用 Markdown 撰寫博碩士論文"
-tags: ['R Markdown', 'Markdown', '中文']
+tags: ['Markdown', 'R Markdown', 'R', '中文']
 mathjax: false
 mermaid: false
 ---
