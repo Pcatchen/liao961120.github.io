@@ -29,12 +29,14 @@ mermaid: false
     
 1. 為 `ntuthesis` 擔保[^guarantee]：
 
-    如果你使用 `ntuthesis` 撰寫臺大[^ntu]論文，你只要擔心論文的內容，任何套件相關的問題 (如排版設定不正確、bug、說明文件不清楚等) 我都會 (盡力) 協助解決 (不擺爛)。
+    > 你專心寫論文，我負責處理論文格式。
+
+    如果使用 `ntuthesis` 撰寫臺大[^ntu]論文，你只要擔心論文的內容，任何套件相關的問題 (如排版設定不正確、bug、說明文件不清楚等) 我都會 (盡力) 協助解決 (不擺爛)。
 
     
 [^guarantee]: 由於我未來會使用 `ntuthesis` 撰寫論文，所以請相信我有動機 (至少自此之後的兩年) 維護此套件。
 
-[^ntu]: `ntuthesis` 其實亦可[撰寫他校論文](https://liao961120.github.io/ntuthesis/articles/extend_template.html)，但目前缺乏他校模板。
+[^ntu]: `ntuthesis` 其實亦可[撰寫他校論文](https://liao961120.github.io/ntuthesis/articles/extend_template.html)，但目前缺乏他校 (封面) 模板。
 
 
 
