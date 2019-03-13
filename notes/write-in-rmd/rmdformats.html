@@ -1648,7 +1648,7 @@ Figure 4: <strong>R Markdown</strong> 運作流程。先由 <code>knitr</code> �
 <p>這個問題對於自行架設部落格的使用者可能是個問題，因為當其想換新的網頁模板時，可能使用不同的靜態網頁產生器 (例如，Jekyll → Hugo)，而原本以 Markdown 撰寫的文章在新的靜態網頁產生器可能會語法不相容。<strong>R Markdown</strong> 在此可以解決這個問題：透過 <a href="https://rmarkdown.rstudio.com/html_fragment_format.html"><code>html_fragment</code></a> 輸出格式，靜態網頁產生器能透過 <strong>R Markdown</strong> 輸出的 HTML，而不非語法不一的 Markdown，產生網頁。</p></li>
 <li><p>程式語言支持</p>
 <p><strong>R Markdown</strong> 的另一個特色是程式語言的整合。<strong>即使不會寫程式，背後有程式語言支持的 R Markdown 仍能提供使用者非常方便的功能</strong>。<strong>R Markdown</strong> 支援使用特殊語法在文件<strong>內文插入變項</strong>，例如，我可以在文內插入 <strong>R</strong> 「回傳目前時間的函數」，自動顯示文件輸出時的時間：</p>
-<p><code>上次更新：`r Sys.time()`</code> 會輸出成：<code>上次更新：2019-03-13 23:18:09</code></p>
+<p><code>上次更新：`r Sys.time()`</code> 會輸出成：<code>上次更新：2019-03-13 23:29:29</code></p>
 <p>這個功能對於從事數據分析的使用者 (e.g. 寫統計學作業的學生) 非常方便。例如，他可以使用 <code><em>p</em>-value = `r pval`</code> (<code>pval</code> 儲存先前計算出來的數值) 直接在內文插入 <em>p</em>-value，而不用在每次數據更新時 (例如發現之前資料有誤)，重新手動複製貼上數值。</p></li>
 <li><p>強大的靠山</p>
 <p><strong>R</strong> 社群今日能如此活躍，有很大一部分是因為 <a href="https://www.rstudio.com/">RStudio</a> 這家公司的推行。<strong>R</strong> 使用者用到的許多套件是由 RStudio 僱用的工程師專職開發的，因此，這些套件會持續的維護、更新、出現更強大的新功能。</p>
@@ -1712,9 +1712,9 @@ Figure 4: <strong>R Markdown</strong> 運作流程。先由 <code>knitr</code> �
 <p>相較之下，如果這 200 份文件是<strong>純文字檔</strong>，要找出哪幾份文件中有出現「王小明」就非常簡單。在類 unix 的電腦上(如 Mac 或 Linux)，只需要打開 Command Line 輸入 <code>grep -r '王小明' *.Rmd</code> 就可找到這些檔案 (在 Windows 上也行，但指令可能不太一樣)。<a href="#fnref5" class="footnote-back">↩</a></p></li>
 <li id="fn6"><p>Markdown 的語法雖然簡單，但這並不代表其排版能力弱於 HTML，因為 Markdown 語法可與 HTML 混用。<a href="#fnref6" class="footnote-back">↩</a></p></li>
 <li id="fn7"><p>Pandoc 自行定義的 Markdown 語法，是市面上盛行的其中一種 Markdown「風格」。Pandoc Markdown 的特色在於其<strong>支援功能非常完整</strong>，例如，它除了大幅擴充原本的 Markdown 語法外，甚至還增加了插入文獻引用的功能 (如同 Endnote，自動處理文獻引用格式)。<a href="#fnref7" class="footnote-back">↩</a></p></li>
-<li id="fn8"><p>其中一種解決方法是只用<a href="https://daringfireball.net/projects/markdown/syntax"><strong>最簡化的 Markdown</strong></a>。如果還需更複雜的排版，就使用 HTML tag。<a href="#fnref8" class="footnote-back">↩</a></p></li>
+<li id="fn8"><p>其中一種解決方法是只用<strong>最簡化的 Markdown</strong> (<a href="https://daringfireball.net/projects/markdown/syntax" class="uri">https://daringfireball.net/projects/markdown/syntax</a>)。如果還需更複雜的排版，就使用 HTML tag。<a href="#fnref8" class="footnote-back">↩</a></p></li>
 <li id="fn9"><p>這是一個困難重重的過程，看見 <span class="math inline">\(\LaTeX\)</span> 噴錯是一件驚心動魄的事。<a href="#fnref9" class="footnote-back">↩</a></p></li>
-<li id="fn10"><p><a href="https://twitter.com/xieyihui/status/1022873179532996609" class="uri">https://twitter.com/xieyihui/status/1022873179532996609</a><a href="#fnref10" class="footnote-back">↩</a></p></li>
+<li id="fn10"><p><a href="https://twitter.com/xieyihui/status/1022873179532996609" class="uri">https://twitter.com/xieyihui/status/1022873179532996609</a>)<a href="#fnref10" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 </div>
