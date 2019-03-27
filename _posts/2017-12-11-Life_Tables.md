@@ -1,5 +1,6 @@
 ---
 title: Constructing Life Tables with R
+mathjax: true
 tags:
 - R
 - notes
