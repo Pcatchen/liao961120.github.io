@@ -28482,7 +28482,7 @@ Paged.registerHandlers(class extends Paged.Handler {
 <p>大學學測申請入學或許提供一種方式，讓我們可以了解大學各科系的特質。這些科系能夠透過申請者形成一個網絡 – 若同一個申請者同時申請了兩個科系，那這兩個科系就形成連結。透過許多科系形成的網絡，我們或許能夠嘗試回答上述的問題。</p>
 <div class="section level3">
 <h3><span class="header-section-number">3.1.1</span> 目標資料</h3>
-<p>新鮮人查榜的學測交叉查榜<span id="fn1" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="1"><a href="https://freshman.tw/cross" class="uri">https://freshman.tw/cross</a></span>提供了每年大學申請入學的資料。在每個科系的頁面右欄有現成的網絡資料 – 例如，在臺大法律系的 交叉科系分析<span id="fn2" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="2"><a href="https://freshman.tw/cross/104/006342" class="uri">https://freshman.tw/cross/104/006342</a></span>，可以直接看到同時申請臺大法律系和其它科系的人數。</p>
+<p>新鮮人查榜的學測交叉查榜<span id="fn1" class="footnote" data-pagedown-footnote-number="1" style="white-space: pre-line;"><a href="https://freshman.tw/cross" class="uri">https://freshman.tw/cross</a></span>提供了每年大學申請入學的資料。在每個科系的頁面右欄有現成的網絡資料 – 例如，在臺大法律系的 交叉科系分析<span id="fn2" class="footnote" data-pagedown-footnote-number="2" style="white-space: pre-line;"><a href="https://freshman.tw/cross/104/006342" class="uri">https://freshman.tw/cross/104/006342</a></span>，可以直接看到同時申請臺大法律系和其它科系的人數。</p>
 </div>
 <div class="section level3">
 <h3><span class="header-section-number">3.1.2</span> 定義網絡</h3>
@@ -28498,7 +28498,7 @@ Paged.registerHandlers(class extends Paged.Handler {
 <li>定義：若學生 A 同時申請「科系甲」和「科系乙」，則臺大的甲乙系之間形成連結</li>
 <li>特性：
 <ul>
-<li>Weighted：同時申請「校系甲」和「校系乙」的學生<strong>人數</strong></li>
+<li>Weighted：同時申請「科系甲」和「科系乙」的學生<strong>人數</strong></li>
 <li>Undirected (無向連結)</li>
 </ul></li>
 </ul></li>
@@ -28509,28 +28509,28 @@ Paged.registerHandlers(class extends Paged.Handler {
 <h2><span class="header-section-number">3.2</span> 資料收集</h2>
 <div class="section level3">
 <h3><span class="header-section-number">3.2.1</span> 網絡資料爬取</h3>
-<p>我們使用 Scrapy<span id="fn3" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="3"><a href="https://scrapy.org" class="uri">https://scrapy.org</a></span> 將臺灣大學各個科系 (共 60 個) 的資料 從新鮮人查榜<span id="fn4" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="4"><a href="https://freshman.tw/cross/104/001" class="uri">https://freshman.tw/cross/104/001</a></span>爬取下來。爬取的資料包含：</p>
+<p>我們使用 Scrapy<span id="fn3" class="footnote" data-pagedown-footnote-number="3" style="white-space: pre-line;"><a href="https://scrapy.org" class="uri">https://scrapy.org</a></span> 將臺灣大學各個科系 (共 60 個) 的資料 從新鮮人查榜<span id="fn4" class="footnote" data-pagedown-footnote-number="4" style="white-space: pre-line;"><a href="https://freshman.tw/cross/104/001" class="uri">https://freshman.tw/cross/104/001</a></span>爬取下來。爬取的資料包含：</p>
 <ol style="list-style-type: decimal">
 <li>科系名稱</li>
 <li>系所資訊</li>
 <li>交叉科系分析</li>
 <li>區域分析 (依准考證號)</li>
 </ol>
-<p>此外，臺大各學系所屬學院則由臺大課程網<span id="fn5" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="5"><a href="https://nol2.aca.ntu.edu.tw/nol/guest/index.php" class="uri">https://nol2.aca.ntu.edu.tw/nol/guest/index.php</a></span>以及臺大課號編碼作業說明<span id="fn6" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="6"><a href="https://nol2.aca.ntu.edu.tw/nol/guest/課程編碼說明.pdf" class="uri">https://nol2.aca.ntu.edu.tw/nol/guest/課程編碼說明.pdf</a></span>所提供之資訊取得。</p>
-<p>Scrapy 爬蟲的原始碼託管於 GitHub<span id="fn7" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="7"><a href="https://github.com/liao961120/collegeSNA" class="uri">https://github.com/liao961120/collegeSNA</a></span>；詳細的變項描述以及資料清理過程記錄於 Jupyter Notebook<span id="fn8" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="8"><a href="https://liao961120.github.io/collegeSNA/ntuNetwork" class="uri">https://liao961120.github.io/collegeSNA/ntuNetwork</a></span>。</p>
+<p>此外，臺大各學系所屬學院則由臺大課程網<span id="fn5" class="footnote" data-pagedown-footnote-number="5" style="white-space: pre-line;"><a href="https://nol2.aca.ntu.edu.tw/nol/guest/index.php" class="uri">https://nol2.aca.ntu.edu.tw/nol/guest/index.php</a></span>以及臺大課號編碼作業說明<span id="fn6" class="footnote" data-pagedown-footnote-number="6" style="white-space: pre-line;"><a href="https://nol2.aca.ntu.edu.tw/nol/guest/課程編碼說明.pdf" class="uri">https://nol2.aca.ntu.edu.tw/nol/guest/課程編碼說明.pdf</a></span>所提供之資訊取得。</p>
+<p>Scrapy 爬蟲的原始碼託管於 GitHub<span id="fn7" class="footnote" data-pagedown-footnote-number="7" style="white-space: pre-line;"><a href="https://github.com/liao961120/collegeSNA" class="uri">https://github.com/liao961120/collegeSNA</a></span>；詳細的變項描述以及資料清理過程記錄於 Jupyter Notebook<span id="fn8" class="footnote" data-pagedown-footnote-number="8" style="white-space: pre-line;"><a href="https://liao961120.github.io/collegeSNA/ntuNetwork" class="uri">https://liao961120.github.io/collegeSNA/ntuNetwork</a></span>。</p>
 </div>
 <div class="section level3">
 <h3><span class="header-section-number">3.2.2</span> 網絡資料描述</h3>
 <p>清理過後的資料包含 60 個學系 (node) 以及 634 條連結 (edge)。由於「護理學系(公費生)」並未與網絡中的其它科系形成連結，在視覺化時將其剔除。因此，下文視覺化的網絡由 59 個 node 和 634 條 edge 組成。</p>
-<p>整理成網絡資料格式的資料存放於 <code>ntuNetwork_edges.csv</code><span id="fn9" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="9"><a href="https://bit.ly/2OygdeK" class="uri">https://bit.ly/2OygdeK</a></span> 與 <code>ntuNetwork_attr2.csv</code><span id="fn10" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="10"><a href="https://bit.ly/2U236by" class="uri">https://bit.ly/2U236by</a></span>。</p>
+<p>整理成網絡資料格式的資料存放於 <code>ntuNetwork_edges.csv</code><span id="fn9" class="footnote" data-pagedown-footnote-number="9" style="white-space: pre-line;"><a href="https://bit.ly/2OygdeK" class="uri">https://bit.ly/2OygdeK</a></span> 與 <code>ntuNetwork_attr2.csv</code><span id="fn10" class="footnote" data-pagedown-footnote-number="10" style="white-space: pre-line;"><a href="https://bit.ly/2U236by" class="uri">https://bit.ly/2U236by</a></span>。</p>
 </div>
 </div>
 <div id="hypothesis" class="section level2">
 <h2><span class="header-section-number">3.3</span> 預期與假設</h2>
 <p>我們希望透過這筆資料能得出兩種資訊：(1) 哪些科系是相似的；以及 (2) 在考慮招生人數以及 degree 這兩種資訊下，哪些科系看起來比較特殊。</p>
 <ol style="list-style-type: decimal">
-<li><p>的基本假設是「人們在選擇要申請哪些科系時，應該會有某種『偏好<span id="fn11" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="11">「偏好」可能是個人興趣，也有可能是家人或社會期待，造成人們在選系時，會選擇一群「相似的」科系。</span>』使其選擇『相似』的科系」。因此，透過各科系之間的連結數量以及強度，我們或許可自然地將科系進行分群。</p></li>
-<li><p>則假設在不考慮各科系的特性下，<strong>若一科系的招生名額越多，其 degree 也 應該越大</strong>，因為一科系招生名額越多，通常也有越多人申請，而這些申請者越有機會同時申請其它的科系。我們可以去觀查<strong>哪些科系違反這項直覺</strong>，再去猜想原因為何。</p></li>
+<li><p>的基本假設是「人們在選擇要申請哪些科系時，應該會有某種『偏好<span id="fn11" class="footnote" data-pagedown-footnote-number="11" style="white-space: pre-line;">「偏好」可能是個人興趣，也有可能是家人或社會期待，造成人們在選系時，會選擇一群「相似的」科系。</span>』使其選擇『相似』的科系」。因此，透過各科系之間的連結數量以及強度，我們或許可自然地將科系進行分群。</p></li>
+<li><p>則假設在不考慮各科系的特性下，<strong>若一科系的招生名額越多，其 degree 也應該越大</strong>，因為一科系招生名額越多，通常也有越多人申請，而這些申請者越有機會同時申請其它的科系。我們可以去觀查<strong>哪些科系違反這項直覺</strong>，再去猜想原因為何。</p></li>
 </ol>
 </div>
 <div class="section level2">
@@ -28565,7 +28565,7 @@ Figure 3.1:  104 年學測申請入學 臺大各系申請網絡連結
 <li>Node 相對 Text 大上許多
 <ul>
 <li>意義：申請該系的人不太會申請臺大其它科系</li>
-<li>例子：醫學系、人類系、牙醫系 (依偏離程度由大至小排序<span id="fn12" class="footnote" style="white-space: pre-line;" data-pagedown-footnote-number="12">這邊是以視覺直接比較，可能會有誤差。</span>)</li>
+<li>例子：醫學系、人類系、牙醫系 (依偏離程度由大至小排序<span id="fn12" class="footnote" data-pagedown-footnote-number="12" style="white-space: pre-line;">這邊是以視覺直接比較，可能會有誤差。</span>)</li>
 </ul></li>
 <li>Node 相對 Text 小許多：申請該系的人也喜歡申請其它科系
 <ul>
