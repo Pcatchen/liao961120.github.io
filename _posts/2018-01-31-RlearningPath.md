@@ -85,13 +85,13 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
   
     - [Hands-On Programming with R](https://rstudio-education.github.io/hopr)：這是一本寫得非常好且相當簡單的書，目標讀者是沒有程式經驗的初學者 (雖然我覺得縱使有程式經驗也可看這本書了解 R 的邏輯)。此書內容僅聚焦在非常基礎的 **Base R**，但重點是其將 R 的邏輯寫得非常清楚。我是在學 R 一陣子之後才看了這本書，對我有莫大的幫助。這本書相當短，可以很快看完，更多資訊請 [google 書名](https://www.google.com.tw/search?biw=1280&bih=560&ei=rF90WtefO8W48QXcv4y4Dg&q=Hands-On+Programming+with+R&oq=Hands-On+Programming+with+R&gs_l=psy-ab.3...1714146.1714146.0.1714717.1.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..1.0.0....0.FFjeBpwN_VQ)。
 
-    - [R for Data Science](http://r4ds.had.co.nz)：這本書應該只會越來越紅 (不知道會不會變成 standard recommendation)。如同其名，這本書就在教 R 於資料科學上的應用。與上本書不同的是，這本書以`tidyverse`套件為基礎而非 Base R。雖然如此，此書並不需要 Base R 的基礎 (有的話會更好，所以我才推薦**Hands-On**)，需要的基礎書中都有介紹。
+    - [R for Data Science](http://r4ds.had.co.nz)：這本書應該只會越來越紅。如同其名，這本書就在教 R 於資料科學上的應用。與上本書不同的是，這本書以`tidyverse`套件為基礎而非 Base R。雖然如此，此書並不需要 Base R 的基礎 (有的話會更好，所以我才推薦**Hands-On**)，需要的基礎書中都有介紹。
 
-    - 我建議可以先從 **Hands-On Programming with R** 開始，因為這本書很短可以快速看完。之後再按照章節慢慢看 **R for Data Science**  (可配合學校上課進度，這本書短時間內看不完)，逐步累積自己的功力。
+    我建議可以先從 **Hands-On Programming with R** 開始，因為這本書很短可以快速看完。之後再按照章節慢慢看 **R for Data Science**  (可配合學校上課進度，這本書短時間內看不完)，逐步累積自己的功力。
     
-        - 上述的書都是英文的，或許有些人很抗拒英文，但中文書並非一個好選擇。當 R 學到某個程度後，更進階的資源幾乎全為英文；此外，google 問題解決方法時，用中文十之八九會找不到答案。看英文書可讓自己熟悉 R 的英文用語，而且這些書的英文都很簡單。
+    上述兩本書都是英文的，或許有些人很抗拒英文，但中文書並非一個好選擇。當 R 學到某個程度後，更進階的資源幾乎全為英文；此外，google 問題解決方法時，用中文十之八九會找不到答案。看英文書可讓自己熟悉 R 的英文用語，而且這些書的英文都很簡單。
 
-    - 如果有志探索 R 的其它可能性，可以參考 [bookdown.org](https://bookdown.org/)  網站上的書 (僅推薦 Star 100 以上，上面還是有一些雷書)。這裡的書都是用`bookdown`套件寫的，而且皆為 open source，可以在網頁上看或下載到電腦 (詳見`bookdown`套件)。
+    如果有志探索 R 的其它可能性，可以參考 [bookdown.org](https://bookdown.org) 的書 (僅推薦 Star 100 以上，上面還是有一些雷書)。這裡的書都是用`bookdown`套件寫的，而且皆為 open source，可以在網頁上看或下載到電腦 (詳見`bookdown`套件)。
 
 
 2. 學校課程：如**課程回顧**所提及，一門 R 的課可以讓自己視野更加廣博。僅是自修閉門造車進步很慢、常常會落掉進度、而且頗為苦悶。有人帶領比較不會走偏方向，同時還能學到許多有趣的東西。
