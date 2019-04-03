@@ -34,14 +34,14 @@ tags:
 
 - 文本分析: 我本來對這部分最沒有興趣，直到我意識到文本資料是研究人類行為、社會與文化最重要的資料來源之一[^2] [^3]。
 
-- Reproducibility: [Rmarkdown](http://rmarkdown.rstudio.com/) (`.Rmd`) 是我見過最強大的文件格式，可以輸出成網頁、投影片、PDF、Word、Markdown 等。這讓使用者可以在一份文件中做事情(`Rmd`)，並依據所需輸出成各種文件，而不用剪剪貼貼(從 Word 貼到 PPT)，也省下排版所花費的心力。例如，要報告可輸出成投影片 (`.html`)、要列印可輸出成 PDF、要放到網路上可輸出成網頁。Rmarkdown 讓使用者能以簡單有效率的方式工作，這是達到 [Reproducibility](https://en.wikipedia.org/wiki/Reproducibility) 的前提與重要基礎。![Reproducible Research with R](/assets/images/post_img/reproducible_research.png) [^repro]
+- Reproducibility: [R Markdown](http://rmarkdown.rstudio.com/) (`.Rmd`) 是我見過最強大的文件格式，可以輸出成網頁、投影片、PDF、Word、Markdown 等。這讓使用者可以在一份文件中做事情(`Rmd`)，並依據所需輸出成各種文件，而不用剪剪貼貼(從 Word 貼到 PPT)，也省下排版所花費的心力。例如，要報告可輸出成投影片 (`.html`)、要列印可輸出成 PDF、要放到網路上可輸出成網頁。R Markdown 讓使用者能以簡單有效率的方式工作，這是達到 [Reproducibility](https://en.wikipedia.org/wiki/Reproducibility) 的前提與重要基礎。![Reproducible Research with R](/assets/images/post_img/reproducible_research.png) [^repro]
 
 
 ### 課程起手式
 
-這門課與我個性相符，完全顯現在第一堂課實習課(Lab Session)的作業上。作業與 R 並無相關，而是要使用 Markdown 格式撰寫自我介紹。由於我對簡約風有點痴迷[^sim] (受 Markdown 影響後更為痴迷)，在 Markdown 上花了一些時間研究。目前，透過 R 與 Pandoc Markdown 語法的整合(即 Rmarkdown)，我可以快速簡潔地寫出含有上下標、Footnotes、超連結、citation 的精美文件[^md]或文章(例如，這篇部落格)而完全不須使用 html 語法。這讓我在寫許多作業時，效率提高不少。
+這門課與我個性相符，完全顯現在第一堂課實習課(Lab Session)的作業上。作業與 R 並無相關，而是要使用 Markdown 格式撰寫自我介紹。由於我對簡約風有點痴迷[^sim] (受 Markdown 影響後更為痴迷)，在 Markdown 上花了一些時間研究。目前，透過 R 與 Pandoc Markdown 語法的整合(即 R Markdown)，我可以快速簡潔地寫出含有上下標、Footnotes、超連結、citation 的精美文件[^md]或文章(例如，這篇部落格)而完全不須使用 html 語法。這讓我在寫許多作業時，效率提高不少。
 
-對 Rmarkdown 的痴迷與熱愛可說是我R語言功力進步的關鍵。**Rmarkdown 賦予每個人將想法傳達給其他人的能力**[^idea]，因此，**能做出美好的東西並與其他人分享**成為我學習 R 最強烈的動機之一。例如，當初在做這門課的[期末專案](https://rlads2017g1.github.io/presentation.html)時，發覺 R 可以畫出很多種[互動式圖表](http://gallery.htmlwidgets.org/)(不須懂 JavaScript)，於是我開始尋找最適合呈現資料的方式。由於不同種類的圖，常有不同資料格式的要求[^dt]，因此為了畫出最適合的圖，我反覆整理許多資料以符合格式。這使得我在 data wrangling 上，能力大幅提升。
+對 R Markdown 的痴迷與熱愛可說是我R語言功力進步的關鍵。**R Markdown 賦予每個人將想法傳達給其他人的能力**[^idea]，因此，**能做出美好的東西並與其他人分享**成為我學習 R 最強烈的動機之一。例如，當初在做這門課的[期末專案](https://rlads2017g1.github.io/presentation.html)時，發覺 R 可以畫出很多種[互動式圖表](http://gallery.htmlwidgets.org/)(不須懂 JavaScript)，於是我開始尋找最適合呈現資料的方式。由於不同種類的圖，常有不同資料格式的要求[^dt]，因此為了畫出最適合的圖，我反覆整理許多資料以符合格式。這使得我在 data wrangling 上，能力大幅提升。
 
 
 ## R 學習路徑
@@ -62,7 +62,7 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
 2. **修課**：我非常建議在學校修一門 R 語言的課(最好 3 學分以上)，但**不建議線上課程**[^online]。修課的話，有老師和助教提供經驗，能省下許多摸索的時間；每週有固定進度，或多或少可迫使自己持續接觸程式；若有期末專案，這會是 R 功力突飛猛進的最佳機會(效果比起純粹練習好太多)。
 
-3. **讓自己喜歡 R**：初學 R 時因為不知道這項的重要性，所以學得有點辛苦。這點真的很微妙，有時候太過專注於學習某項"技能"，反而會**過於專注實用性而忽略了趣味性**，於是只剩理性說服自己：*學這很有用，你一定要堅持下去*。通常開始這樣想，代表離放棄不遠了。這也是為何我很推 [R 語言與資料科學導論](https://nol2.aca.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=142%20U0750&class=&dpt_code=1420&ser_no=76601&semester=106-1&lang=CH)這門課的原因 ─ 老師真的很有智慧，不斷鼓勵學生們去想**有趣又可用資料科學回答的問題**，也常介紹一些 R 意想不到的有趣應用，但從未將焦點放在程式的硬實力。我自己由 R 善於**呈現**的特質切入，從 Rmarkdown 開始，擴展到資料視覺化，又到網頁設計(縱使我`html`和`css`基礎很差)，每一項對我來說都非常有趣，R 學起來因而樂此不疲。
+3. **讓自己喜歡 R**：初學 R 時因為不知道這項的重要性，所以學得有點辛苦。這點真的很微妙，有時候太過專注於學習某項"技能"，反而會**過於專注實用性而忽略了趣味性**，於是只剩理性說服自己：*學這很有用，你一定要堅持下去*。通常開始這樣想，代表離放棄不遠了。這也是為何我很推 [R 語言與資料科學導論](https://nol2.aca.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=142%20U0750&class=&dpt_code=1420&ser_no=76601&semester=106-1&lang=CH)這門課的原因 ─ 老師真的很有智慧，不斷鼓勵學生們去想**有趣又可用資料科學回答的問題**，也常介紹一些 R 意想不到的有趣應用，但從未將焦點放在程式的硬實力。我自己由 R 善於**呈現**的特質切入，從 R Markdown 開始，擴展到資料視覺化，又到網頁設計(縱使我`html`和`css`基礎很差)，每一項對我來說都非常有趣，R 學起來因而樂此不疲。
 
 
 ### 實作：專案
@@ -101,7 +101,7 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
     - [R Graph Gallery](https://www.r-graph-gallery.com/)、[htmlwidgets for R](http://www.htmlwidgets.org/): R 最為吸引人的特徵之一就是其強大的繪圖功能，加上其它套件的擴充，幾乎所有跟資料有關的圖都可以用 R 畫。沒事多多欣賞其他人用 R 畫出的圖，不僅療癒放鬆，同時對 R 的能力有個大概的想像、未來更有可能會有使用需求。
 
-    - [Rmarkdown](http://rmarkdown.rstudio.com/gallery.html): 先前提過 Rmarkdown 很強大，可以點進 gallery 感受一下其生產力。我認為不會用 Rmarkdown 比起不會用 R 還要可惜。
+    - [R Markdown](http://rmarkdown.rstudio.com/gallery.html): 先前提過 R Markdown 很強大，可以點進 gallery 感受一下其生產力。我認為不會用 R Markdown 比起不會用 R 還要可惜。
       
     - [Blogdown](https://bookdown.org/yihui/blogdown/): 我目前的網站(一部份)是透過 `blogdown` 套件在經營[^bg]的。Blogdown 大幅降低了架站的門檻，即使完全不懂 HTML/CSS 也能快速上手，同時配合 Git/GitHub 能讓發表(及修改)文章的過程非常有效率。此外，以 `blogdown` 架設的網頁是靜態的，不同於 Wordpress 等的動態網頁，靜態網頁的速度要快許多、不需要付費伺服器，而且容易搬遷。
 
@@ -114,7 +114,7 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
         - 視覺化：**R Graph Gallery**, **htmlwidgets**
 
-        - 網頁製作：**Rmarkdown**, **Blogdown**
+        - 網頁製作：**R Markdown**, **Blogdown**
     
     - 這些都可以透過 R 完成，並且讓自己更有動機實作專案、讓專案看起來更完美、甚至還可造福社會。
 
@@ -154,9 +154,9 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
 [^sim]: 我本來對美感、簡約、使用者經驗完全不在乎，但受我好朋友的影響，越來越在意這些東西(看到乾淨舒服的版面就會很興奮，有點點不和諧就會想修改它)。
 
-[^md]: 見 [Rmarkdown](http://rmarkdown.rstudio.com/) 了解其強大。
+[^md]: 見 [R Markdown](http://rmarkdown.rstudio.com/) 了解其強大。
 
-[^idea]: Markdown 的學習門檻很低，使大家能簡單地寫出排版整潔漂亮的文章。Rmarkdown 大幅擴充 Markdown 的功能，秉持著相同的精神，Rmarkdown 使大家能簡單地寫出排版整潔漂亮(且含有R跑出之圖表)的**文章**、**投影片**、**書籍**，甚至**網站**。
+[^idea]: Markdown 的學習門檻很低，使大家能簡單地寫出排版整潔漂亮的文章。R Markdown 大幅擴充 Markdown 的功能，秉持著相同的精神，R Markdown 使大家能簡單地寫出排版整潔漂亮(且含有R跑出之圖表)的**文章**、**投影片**、**書籍**，甚至**網站**。
 
 [^dt]: 例如欲繪製時間序列的資料`ggplot2`及`dygraphs`對資料就有不同的要求。
 
