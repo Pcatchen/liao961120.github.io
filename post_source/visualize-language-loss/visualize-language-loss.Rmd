@@ -62,7 +62,7 @@ As shown in Figure \@ref(fig:tw-pyramid), the shape of the age-sex pyramid of [T
 |--|--|
 | Shrinking and Dying | Inverted Triangle |
 | Growing | Triangle |
-| Stable | Retangualr Bar |
+| Stable | Rectangular Bar |
 
 
 ## Drawing Age-Sex Pyramid with ggplot2
@@ -408,7 +408,7 @@ multiplot(py1, py2, py3, py4, py5, py6, cols = 2)
 
 As described in [Age-Sex Pyramid of Language](#age-sex-pyramid-of-language) above, we can learn about a language's vitality in Taiwan from the age-sex pyramids drawn above. 
 
-For Formosan and South East Asian languages, there are too few data, and we can't learn much about these languages from the plots. For Mandarin, the shape of the pyramid is retangular, indicating the linguistic competence of Mandarin is stable across people of all ages. This is expected as Mandarin, in Taiwan, is the most prevalent language, and most people use it as the primary language in workplace and home. 
+For Formosan and South East Asian languages, there are too few data, and we can't learn much about these languages from the plots. For Mandarin, the shape of the pyramid is rectangular, indicating the linguistic competence of Mandarin is stable across people of all ages. This is expected as Mandarin, in Taiwan, is the most prevalent language, and most people use it as the primary language in workplace and home. 
 
 Pyramids of Taiwanese and Hakka have inverted trianglular shapes, indicating lower linguistic competence among yonger people. Indeed, it's not uncommmon to see the fathers and mothers talk to their children in Mandarin but talk to their parents in Taiwanese. Taiwanese is the second prevalent language in Taiwan, but it is shrinking, particularly among young people. Hakka ranks third in prevalence. It faces similar situation to Taiwanese but the situation is even worse, since the usage of Hakka is mostly restricted to Hakka people whereas usage of Taiwanese is not restricted to particular groups of people (many indigenous and Hakka peoples speak fluent Taiwanese).
 
@@ -418,6 +418,6 @@ English has a special status in Taiwan. It is not a native tongue to people born
 |--|--| -- |
 | Shrinking and Dying | Inverted Triangle | Taiwanese, Hakka|
 | Growing | Triangle | English |
-| Stable | Retangualr Bar | Mandarin |
+| Stable | Rectangular Bar | Mandarin |
 
 Table: (\#tab:tw-pyramids) Situations of the four most prevalent languages in Taiwan.
