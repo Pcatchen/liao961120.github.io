@@ -116,7 +116,7 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
         - 網頁製作：**R Markdown**, **Blogdown**
     
-    - 這些都可以透過 R 完成，並且讓自己更有動機實作專案、讓專案看起來更完美、甚至還可造福社會。
+    - 這些都可以透過 R 完成，並且讓自己更有動機實作專案、讓專案看起來更完美。
 
 
 ### 更上一層樓：Following and Followers
@@ -129,7 +129,7 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
 透過追蹤 R 社群是一個讓自己跟上快速成長的 R 的好方法，讓自己每日都長一些知識。例如，我透過臉書追蹤 [R bloggers](https://www.facebook.com/rbloggers/)，裡面常出現優質好文，且內容通常清楚易讀。
 
-另一個讓 R 功力快速成長的方式，就是自己成為 R bloggers：我不是指寫的文章要登上[R bloggers](https://www.facebook.com/rbloggers/)，而是像那些作者一樣在部落格上寫文章。寫文章是一種很好的學習方式，能幫自己重新組織所學，同時也可檢視是否真正了解正在撰寫的主題。文章不見得是寫給別人看的，有時忘記一些東西，透過自己的文字重新學習相當方便。推薦兩篇簡短的優質文說明寫 blog 的好處：[Yihui Xie](https://bookdown.org/yihui/blogdown/personal-experience.html) 、[David Robertson](https://www.r-bloggers.com/advice-to-aspiring-data-scientists-start-a-blog/)。
+另一個讓 R 功力快速成長的方式，就是自己成為 R bloggers：我不是指寫的文章要登上 [R bloggers](https://www.facebook.com/rbloggers/)，而是像那些作者一樣在部落格上寫文章。寫文章是一種很好的學習方式，能幫自己重新組織所學，同時也可檢視是否真正了解正在撰寫的主題。文章不見得是寫給別人看的，有時忘記一些東西，透過自己的文字重新學習相當方便。推薦兩篇簡短的優質文說明寫 blog 的好處：[Yihui Xie](https://bookdown.org/yihui/blogdown/personal-experience.html) 、[David Robertson](https://www.r-bloggers.com/advice-to-aspiring-data-scientists-start-a-blog/)。
 
 ## 小結
 
@@ -139,7 +139,6 @@ R 語言的基礎 ─ **Base R** 是剛開始學 R 的一大障礙，這也是�
 
 <br>
 
-## 附註
 [^I1]: **R 語言**本身不算有趣，而是 R 及其生態圈所能做到的事。幾乎任何想得到、可用電腦處理的事情，都可找到相關的 R 套件。
 
 [^a]: 我在開學前的暑假即開始自學 **R**，進步相當緩慢，而且語法時常忘記。最重要的是，我必須花心力督促自己才能繼續。開學後在課堂上教導的內容不多，僅做些簡單的介紹，剩下的要靠自己發掘。由於深深感受到 Markdown 的潛力 (見**課程起手式**，我開始「不務正業」，去學一些和 R  (看似) 不怎麼相關的東西 (例如，研究如何用 GitHub Pages 架部落格)，也越來越喜歡 html 格式 (以前偏愛 PDF，但發現 html 能呈現的東西比 PDF 多太多，又比較美觀)。於是，R 成為我處理作業最常使用的程式之一。
