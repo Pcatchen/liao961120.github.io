@@ -101,7 +101,9 @@ Scrapy 爬蟲的原始碼託管於 [GitHub](https://github.com/liao961120/colleg
 
 所有的屬性 (除了 Text Color 之外) 皆有數值梯度，並線性對應到視覺屬性的強度上。
 
-```{r network, fig.cap=' 104 年學測申請入學 臺大各系申請網絡連結'}
+(ref:caption) **104 年學測申請入學 臺大各系申請網絡連結**。svg 原圖： http://bit.ly/104ntuNetwork
+
+```{r network, fig.cap='(ref:caption)'}
 include_graphics('output.svg')
 ```
 
