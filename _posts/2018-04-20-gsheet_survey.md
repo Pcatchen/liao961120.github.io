@@ -23,7 +23,7 @@ google 表單大幅降低蒐集問卷資料的難度；此外，表單將回應*
 --------------------------------------
 
 
-![](/assets/images/post_img/gsheet_mermaid.png)
+<img src="/assets/images/post_img/gsheet_mermaid.png" alt="運作邏輯" style="width:32em">
 
 <!-- see `/assets/images/post_img/gsheet_mermaid.mermaid.txt` -->
 
