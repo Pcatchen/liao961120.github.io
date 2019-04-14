@@ -23,9 +23,9 @@ google 表單大幅降低蒐集問卷資料的難度；此外，表單將回應*
 --------------------------------------
 
 
-![](assets/images/post_img/gsheet_mermaid.png)
+![](/assets/images/post_img/gsheet_mermaid.png)
 
-<!-- see `assets/images/post_img/gsheet_mermaid.mermaid.txt` -->
+<!-- see `/assets/images/post_img/gsheet_mermaid.mermaid.txt` -->
 
 上圖的每個方塊(除了左圖的**試算表**)名稱，皆對應到**回饋功能示範平台**背後運作的檔案。圖需要分**左**、**右**來看：
 
