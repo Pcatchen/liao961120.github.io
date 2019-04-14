@@ -1,5 +1,5 @@
 ---
-mermaid: true
+mermaid: false
 title: google 表單即時回饋
 description: 透過結合靜態網頁、DataCamp light、以及 google 試算表，使填寫結果即時回饋成為可能
 tags:
@@ -22,29 +22,10 @@ google 表單大幅降低蒐集問卷資料的難度；此外，表單將回應*
 概觀: 運作邏輯 
 --------------------------------------
 
-<div class="mermaid">
-graph TD;
-	user("使用者") ==>|"1. 填寫"| Form("表單");
-	Form -.->|"2. 原始資料"|sheet("試算表");
-	sheet -.->|"3. 問卷回饋(多筆)"|dc;
-	dc("DataCamp") ==>|"4. 問卷回饋(1筆)"| user;
 
-	style Form fill:#8b64ce;
-	style dc fill:#08A8D0;
-	style user fill:#FFFFFF;
-	style sheet fill:#1FA463, stroke:#898989,stroke-width:3.5px,stroke-dasharray: 5, 5;
-	
-	Form2("表單") -->|"1. 自動產生"|sheet1("表單回應");
-	sheet1 -->|"2. 連結"|sheet2("運算分析");
-	sheet2  -->|"3. 連結"|sheet3("結果查找");
-	dc2("DataCamp") -.->|"4. 讀取資料"|sheet3;
-	
-	style sheet1 fill:#1FA463;
-	style sheet2 fill:#1FA463;
-	style sheet3 fill:#1FA463;
-	style Form2 fill:#8b64ce;
-	style dc2 fill:#08A8D0;
-</div>
+![](assets/images/post_img/gsheet_mermaid.png)
+
+<!-- see `assets/images/post_img/gsheet_mermaid.mermaid.txt` -->
 
 上圖的每個方塊(除了左圖的**試算表**)名稱，皆對應到**回饋功能示範平台**背後運作的檔案。圖需要分**左**、**右**來看：
 
