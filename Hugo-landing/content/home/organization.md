@@ -25,7 +25,7 @@ weight = 100
   description = '<a href="http://lopen.linguistics.ntu.edu.tw" target="_blank" style="text-align:center"><img src="http://lopen.linguistics.ntu.edu.tw/assets/icon/logo.jpg" style="max-width: 150px; max-height: 150px; margin-bottom:15%; display: inline-block"></a>'
 
 [[feature]]
-  description = '<a href="https://collabin.netlify.com/info/about/" target="_blank" style="text-align:center"><img src="https://collabin.netlify.com/images/logo.png" style="max-width: 150px; max-height: 150px; margin-bottom:15%; display: inline-block"></a>'
+  description = '<a href="https://collabin.netlify.com/info/about/" target="_blank" style="text-align:center"><img src="https://collabin.netlify.com/images/logo-trans.png" style="max-width: 150px; max-height: 150px; margin-bottom:15%; display: inline-block"></a>'
   
 [[feature]]
   description = '<a href="https://www.r-bloggers.com/" target="_blank" style="text-align:center"><img src="/assets/images/rbloggers.png" style="max-width: 150px; max-height: 150px; margin-bottom:15%; display: inline-block"></a>'
