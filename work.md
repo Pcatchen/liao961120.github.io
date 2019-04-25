@@ -20,6 +20,7 @@ comment: false
       }
 </style>
 
+
 ## Personal
 
 #### Authoring Tools
@@ -86,3 +87,7 @@ A half-done book, probably forever. Finished chapters include *Multivariate norm
 Our final group project of the course [Introduction to Data Science with R](https://nol2.aca.ntu.edu.tw/nol/coursesearch/print_table.php?course_id=142%20U0750&class=&dpt_code=1420&ser_no=76601&semester=106-1&lang=CH) at NTU (first semester, 2017). Check out our group members [here](https://rlads2017g1.github.io).  
 (*Displays properly only on screens large enough. Takes some time to load the web page, be patient!*)
 {:.indent}
+
+## Slides
+
+You can found all of my slides [here](https://liao961120.github.io/slides/).
