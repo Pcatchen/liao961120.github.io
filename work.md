@@ -116,6 +116,6 @@ A talk at Fu Jen Catholic University, New Taipei City, Taiwan.
 
 ### Others
 
-`Sep 28, 2018`{:.ori} [Package pttR](pttR-intro){:.tab0}
+`Sep 28, 2018`{:.ori} [Package pttR](https://liao961120.github.io/slides/pttR-intro){:.tab0}
 
 
