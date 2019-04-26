@@ -90,4 +90,32 @@ Our final group project of the course [Introduction to Data Science with R](http
 
 ## Slides
 
-You can found all of my slides [here](https://liao961120.github.io/slides/).
+
+### Talks
+
+`Apr 22, 2019`{:.ori} [Introduction to R Markdown](https://liao961120.github.io/2019-fju-rmd-talk/slide/){:.tab0}
+
+A talk at Fu Jen Catholic University, New Taipei City, Taiwan.
+{:.indent}
+
+### Docs
+
+`Apr 12, 2019`{:.ori} [Collabin Documentation](https://collabin.netlify.com/instruction/){:.tab0}
+
+`Mar 08, 2019`{:.ori} [Collabin for LOPE](https://liao961120.github.io/slides/lope-collabin/){:.tab0}
+
+`Oct 04, 2018`{:.ori} [Xaringan Reference](https://liao961120.github.io/slides/xaringan/){:.tab0} 
+
+
+### Journal Paper Presentation
+
+`Apr 23, 2019`{:.ori} [Getting real about Semantic Illusions (Brouwer et al., 2012)](https://liao961120.github.io/brouwer2012/){:.tab0}
+
+`Dec 25, 2018`{:.ori} [Social Psychology Group Report](http://bit.ly/socialpsy181225){:.tab0}
+
+
+### Others
+
+`Sep 28, 2018`{:.ori} [Package pttR](pttR-intro){:.tab0}
+
+
